@@ -77,19 +77,39 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Ayanfeoluwa Alalade — Photographer & Frontend Developer" },
+      {
+        name: "description",
+        content:
+          "The dual portfolio of Ayanfeoluwa Alalade: cinematic photography and thoughtful frontend development. One creator, two crafts.",
+      },
+      { name: "author", content: "Ayanfeoluwa Alalade" },
+      {
+        property: "og:title",
+        content: "Ayanfeoluwa Alalade — Photographer & Frontend Developer",
+      },
+      {
+        property: "og:description",
+        content:
+          "Cinematic photography meets engineered interfaces. Explore the lens and the logic of one cross-disciplinary creator.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap",
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
