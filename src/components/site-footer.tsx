@@ -43,6 +43,25 @@ export function SiteFooter() {
               </a>
             </div>
 
+            <div className="flex flex-col gap-2 text-sm md:items-end">
+              <a
+                href="https://ayanfewavesvisuals.lovable.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-muted-foreground transition-colors hover:text-dusk"
+              >
+                Photography portfolio ↗
+              </a>
+              <a
+                href="https://ayanfeoluwasportfolio.vercel.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-muted-foreground transition-colors hover:text-mint"
+              >
+                Development portfolio ↗
+              </a>
+            </div>
+
             <div className="flex gap-6 text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground">
               <a
                 href="https://www.tiktok.com/@ayanfewaves_visuals1"
@@ -69,6 +88,7 @@ export function SiteFooter() {
                 LinkedIn
               </a>
             </div>
+
 
           </div>
         </div>
