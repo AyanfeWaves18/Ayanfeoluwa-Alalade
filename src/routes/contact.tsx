@@ -30,6 +30,8 @@ const services = [
     label: "Photography",
     items: ["Portraits", "Events", "Editorial", "Landscapes"],
     email: "ayanfewavesvisuals@gmail.com",
+    portfolio: "https://ayanfewavesvisuals.lovable.app/",
+    portfolioLabel: "ayanfewavesvisuals.lovable.app",
   },
   {
     tone: "mint" as const,
@@ -37,8 +39,11 @@ const services = [
     label: "Development",
     items: ["Frontend builds", "Landing pages", "Design systems", "UI work"],
     email: "ayanfeoluwaalalade2000@gmail.com",
+    portfolio: "https://ayanfeoluwasportfolio.vercel.app/",
+    portfolioLabel: "ayanfeoluwasportfolio.vercel.app",
   },
 ];
+
 
 function ContactPage() {
   return (
