@@ -36,7 +36,7 @@ const services = [
     tag: "D",
     label: "Development",
     items: ["Frontend builds", "Landing pages", "Design systems", "UI work"],
-    email: "dev@ayanfe.studio",
+    email: "ayanfeoluwaalalade2000@gmail.com",
   },
 ];
 
