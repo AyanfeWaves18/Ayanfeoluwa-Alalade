@@ -29,14 +29,14 @@ export type Photo = {
 export const photos: Photo[] = [
   {
     src: photoPortrait,
-    title: "Echoes of Silence",
+    title: "Shrouded Gaze",
     category: "Portraits",
     meta: "2024 — Portrait",
     span: "wide",
   },
   {
     src: photoEditorial,
-    title: "Texture Study No. 4",
+    title: "Texture Study",
     category: "Editorial",
     meta: "2024 — Editorial",
     span: "tall",
@@ -57,12 +57,24 @@ export const photos: Photo[] = [
   },
   {
     src: heroPhotography,
-    title: "L'Heure Bleue",
+    title: "Dusk Avenue",
     category: "Nature",
     meta: "2023 — Landscape",
     span: "wide",
   },
 ];
+
+export const externalLinks = {
+  photographyPortfolio: "https://ayanfewavesvisuals.lovable.app/",
+  photographyGallery: "https://ayanfewavesvisuals.lovable.app/portfolio",
+  photographyWhatsApp:
+    "https://wa.me/message/QJFLNZ6VPBP6C1?text=Hi%2C%20Ayanfe%20I%27d%20like%20to%20book%20a%20photography%20session.",
+  devPortfolio: "https://ayanfeoluwasportfolio.vercel.app/",
+  devProjects: "https://ayanfeoluwasportfolio.vercel.app/#projects",
+  tiktok: "https://www.tiktok.com/@ayanfewaves_visuals1",
+  github: "https://github.com/AyanfeWaves18",
+  linkedin: "https://www.linkedin.com/in/ayanfeoluwa-alalade-34b759362",
+} as const;
 
 export const photoCategories = [
   "All",
@@ -85,25 +97,25 @@ export type Project = {
 export const projects: Project[] = [
   {
     index: "[01]",
-    name: "Nexora Dashboard",
+    name: "Teal & Gold Mini Store",
     description:
-      "A responsive analytics dashboard with fluid data visualisation, built for clarity and speed across every viewport.",
+      "A mini e-commerce web app with product browsing, shopping cart functionality and a clean interface built for an elegant shopping experience.",
     status: "DEPLOYED",
     statusTone: "live",
     image: devProject1,
-    stack: ["React", "TypeScript", "Tailwind"],
-    href: "#",
+    stack: ["HTML", "CSS", "JavaScript"],
+    href: "https://ayanfeoluwasportfolio.vercel.app/#projects",
   },
   {
     index: "[02]",
-    name: "Minted Design System",
+    name: "Nike Rebrand",
     description:
-      "An atomic component library — colours, typography, inputs and states — documented for consistent, scalable product work.",
-    status: "v1.0.0",
+      "A rebranded website concept for Nike — modern design principles and creative web development with a fresh take on the iconic brand.",
+    status: "CONCEPT",
     statusTone: "version",
     image: devProject2,
-    stack: ["React", "CSS3", "Storybook"],
-    href: "#",
+    stack: ["HTML", "CSS", "JavaScript"],
+    href: "https://ayanfeoluwasportfolio.vercel.app/#projects",
   },
 ];
 
@@ -113,9 +125,7 @@ export const techStack = [
   "JavaScript",
   "React",
   "TypeScript",
-  "Tailwind",
   "Git",
-  "Figma",
 ];
 
 export const skills = [
@@ -130,8 +140,8 @@ export const skills = [
     tags: ["CSS3", "Flexbox", "Grid", "Animation"],
   },
   {
-    title: "JavaScript & React",
-    body: "Interactive, component-driven interfaces with clean state and thoughtful UX.",
-    tags: ["JavaScript", "React", "TypeScript"],
+    title: "JavaScript",
+    body: "Clean, efficient JavaScript for dynamic, interactive user experiences — with React and TypeScript in active exploration.",
+    tags: ["ES6+", "DOM", "APIs", "React", "TypeScript"],
   },
 ];
