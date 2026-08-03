@@ -10,10 +10,10 @@ export function SiteFooter() {
               Ready to build or shoot
             </p>
             <a
-              href="mailto:hello@ayanfe.studio"
-              className="mt-6 block font-serif text-4xl italic leading-tight tracking-tight text-foreground transition-colors hover:text-dusk sm:text-5xl md:text-6xl"
+              href="mailto:ayanfeoluwaalalade2000@gmail.com"
+              className="mt-6 block break-words font-serif text-3xl italic leading-tight tracking-tight text-foreground transition-colors hover:text-dusk sm:text-4xl md:text-5xl"
             >
-              hello@ayanfe.studio
+              ayanfeoluwaalalade2000@gmail.com
             </a>
             <p className="mt-6 max-w-md text-pretty text-sm leading-relaxed text-muted-foreground">
               Whether it's a cinematic shoot at twilight or a fast, beautiful
@@ -24,36 +24,52 @@ export function SiteFooter() {
           <div className="flex flex-col gap-6 md:items-end">
             <div className="flex flex-col gap-3">
               <a
-                href="mailto:photography@ayanfe.studio"
+                href="mailto:ayanfewavesvisuals@gmail.com"
                 className="group flex items-center gap-3 text-sm font-medium text-foreground/90 transition-colors hover:text-dusk"
               >
                 <span className="rounded bg-dusk/15 px-1.5 py-0.5 text-[10px] font-mono text-dusk">
                   P
                 </span>
-                photography@ayanfe.studio
+                ayanfewavesvisuals@gmail.com
               </a>
               <a
-                href="mailto:dev@ayanfe.studio"
+                href="mailto:ayanfeoluwaalalade2000@gmail.com"
                 className="group flex items-center gap-3 text-sm font-medium text-foreground/90 transition-colors hover:text-mint"
               >
                 <span className="rounded bg-mint/15 px-1.5 py-0.5 text-[10px] font-mono text-mint">
                   D
                 </span>
-                dev@ayanfe.studio
+                ayanfeoluwaalalade2000@gmail.com
               </a>
             </div>
 
             <div className="flex gap-6 text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground">
-              <a href="#" className="transition-colors hover:text-foreground">
-                Instagram
+              <a
+                href="https://www.tiktok.com/@ayanfewaves_visuals1"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="transition-colors hover:text-dusk"
+              >
+                TikTok
               </a>
-              <a href="#" className="transition-colors hover:text-foreground">
+              <a
+                href="https://github.com/AyanfeWaves18"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="transition-colors hover:text-mint"
+              >
                 GitHub
               </a>
-              <a href="#" className="transition-colors hover:text-foreground">
+              <a
+                href="https://www.linkedin.com/in/ayanfeoluwa-alalade-34b759362"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="transition-colors hover:text-mint"
+              >
                 LinkedIn
               </a>
             </div>
+
           </div>
         </div>
 
