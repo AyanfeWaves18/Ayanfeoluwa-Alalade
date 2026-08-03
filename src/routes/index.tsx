@@ -85,12 +85,22 @@ function Index() {
                 cinematic twilight.
               </p>
             </div>
-            <Link
-              to="/photography"
-              className="shrink-0 font-mono text-xs uppercase tracking-[0.2em] text-dusk transition-colors hover:text-foreground"
-            >
-              View all works →
-            </Link>
+            <div className="flex shrink-0 flex-col gap-2">
+              <Link
+                to="/photography"
+                className="font-mono text-xs uppercase tracking-[0.2em] text-dusk transition-colors hover:text-foreground"
+              >
+                View all works →
+              </Link>
+              <a
+                href="https://ayanfewavesvisuals.lovable.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-dusk"
+              >
+                Ayanfe Waves Visuals ↗
+              </a>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
@@ -107,7 +117,7 @@ function Index() {
               </div>
               <figcaption className="mt-4 flex items-center justify-between">
                 <span className="font-serif text-lg italic">
-                  Echoes of Silence
+                  Shrouded Gaze
                 </span>
                 <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
                   2024 — Portrait
@@ -246,13 +256,21 @@ function Index() {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
             <Link
               to="/development"
               className="inline-flex rounded-full bg-secondary px-6 py-3 text-sm font-medium text-mint ring-1 ring-mint/40 transition-colors hover:bg-mint hover:text-mint-foreground"
             >
               Explore all projects
             </Link>
+            <a
+              href="https://ayanfeoluwasportfolio.vercel.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex rounded-full px-6 py-3 font-mono text-sm text-muted-foreground ring-1 ring-border transition-colors hover:text-mint"
+            >
+              Dev portfolio ↗
+            </a>
           </div>
 
           {/* Tech stack strip */}
