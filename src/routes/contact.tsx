@@ -29,7 +29,7 @@ const services = [
     tag: "P",
     label: "Photography",
     items: ["Portraits", "Events", "Editorial", "Landscapes"],
-    email: "photography@ayanfe.studio",
+    email: "ayanfewavesvisuals@gmail.com",
   },
   {
     tone: "mint" as const,
