@@ -66,13 +66,12 @@ function ContactPage() {
       <section className="mx-auto max-w-6xl px-6 pb-28">
         <div className="grid gap-6 md:grid-cols-2">
           {services.map((service) => (
-            <a
+            <div
               key={service.label}
-              href={`mailto:${service.email}`}
               className={
                 service.tone === "dusk"
-                  ? "group rounded-xl border border-border bg-twilight p-8 transition-colors hover:border-dusk/50"
-                  : "group rounded-xl border border-border bg-terminal p-8 transition-colors hover:border-mint/50"
+                  ? "rounded-xl border border-border bg-twilight p-8 transition-colors hover:border-dusk/50"
+                  : "rounded-xl border border-border bg-terminal p-8 transition-colors hover:border-mint/50"
               }
             >
               <div className="flex items-center gap-3">
@@ -97,16 +96,30 @@ function ContactPage() {
                   </li>
                 ))}
               </ul>
-              <p
+              <a
+                href={`mailto:${service.email}`}
                 className={
                   service.tone === "dusk"
-                    ? "mt-8 text-sm font-medium text-foreground transition-colors group-hover:text-dusk"
-                    : "mt-8 text-sm font-medium text-foreground transition-colors group-hover:text-mint"
+                    ? "mt-8 block break-words text-sm font-medium text-foreground transition-colors hover:text-dusk"
+                    : "mt-8 block break-words text-sm font-medium text-foreground transition-colors hover:text-mint"
                 }
               >
                 {service.email} →
-              </p>
-            </a>
+              </a>
+              <a
+                href={service.portfolio}
+                target="_blank"
+                rel="noreferrer noopener"
+                className={
+                  service.tone === "dusk"
+                    ? "mt-3 block break-words text-sm text-muted-foreground transition-colors hover:text-dusk"
+                    : "mt-3 block break-words text-sm text-muted-foreground transition-colors hover:text-mint"
+                }
+              >
+                {service.portfolioLabel} ↗
+              </a>
+            </div>
+
           ))}
         </div>
 
