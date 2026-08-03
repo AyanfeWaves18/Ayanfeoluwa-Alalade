@@ -29,14 +29,14 @@ const services = [
     tag: "P",
     label: "Photography",
     items: ["Portraits", "Events", "Editorial", "Landscapes"],
-    email: "photography@ayanfe.studio",
+    email: "ayanfewavesvisuals@gmail.com",
   },
   {
     tone: "mint" as const,
     tag: "D",
     label: "Development",
     items: ["Frontend builds", "Landing pages", "Design systems", "UI work"],
-    email: "dev@ayanfe.studio",
+    email: "ayanfeoluwaalalade2000@gmail.com",
   },
 ];
 
@@ -106,16 +106,32 @@ function ContactPage() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-[11px] font-medium uppercase tracking-[0.25em] text-muted-foreground">
-          <a href="#" className="transition-colors hover:text-foreground">
-            Instagram
+          <a
+            href="https://www.tiktok.com/@ayanfewaves_visuals1"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="transition-colors hover:text-dusk"
+          >
+            TikTok
           </a>
-          <a href="#" className="transition-colors hover:text-foreground">
+          <a
+            href="https://github.com/AyanfeWaves18"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="transition-colors hover:text-mint"
+          >
             GitHub
           </a>
-          <a href="#" className="transition-colors hover:text-foreground">
+          <a
+            href="https://www.linkedin.com/in/ayanfeoluwa-alalade-34b759362"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="transition-colors hover:text-mint"
+          >
             LinkedIn
           </a>
         </div>
+
       </section>
 
       <SiteFooter />
