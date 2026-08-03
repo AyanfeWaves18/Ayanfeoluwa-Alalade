@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { projects, skills, techStack } from "@/lib/portfolio-data";
+import { externalLinks, projects, skills, techStack } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/development")({
   head: () => ({
@@ -41,6 +41,33 @@ function DevelopmentPage() {
           caring about clean code, thoughtful design, and experiences that feel
           effortless to use.
         </p>
+
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a
+            href={externalLinks.devPortfolio}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="rounded-md bg-mint px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-mint-foreground transition-opacity hover:opacity-90"
+          >
+            Dev portfolio ↗
+          </a>
+          <a
+            href={externalLinks.github}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="rounded-md border border-border px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:text-foreground"
+          >
+            GitHub
+          </a>
+          <a
+            href={externalLinks.linkedin}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="rounded-md border border-border px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:text-foreground"
+          >
+            LinkedIn
+          </a>
+        </div>
       </section>
 
       {/* Projects */}
@@ -55,9 +82,12 @@ function DevelopmentPage() {
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {projects.map((project) => (
-            <article
+            <a
               key={project.name}
-              className="group rounded-xl border border-border bg-card/20 p-8 transition-colors hover:border-mint/40"
+              href={project.href}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="group block rounded-xl border border-border bg-card/20 p-8 transition-colors hover:border-mint/40"
             >
               <div className="mb-6 flex items-start justify-between gap-4">
                 <div>
@@ -98,7 +128,7 @@ function DevelopmentPage() {
                   </span>
                 ))}
               </div>
-            </article>
+            </a>
           ))}
         </div>
       </section>
@@ -140,6 +170,16 @@ function DevelopmentPage() {
               {tech}
             </span>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <a
+            href={externalLinks.devProjects}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="font-mono text-sm text-muted-foreground transition-colors hover:text-mint"
+          >
+            See all projects on ayanfeoluwasportfolio.vercel.app →
+          </a>
         </div>
       </section>
 

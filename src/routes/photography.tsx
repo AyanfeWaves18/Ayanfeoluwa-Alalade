@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { photoCategories, photos } from "@/lib/portfolio-data";
+import { externalLinks, photoCategories, photos } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/photography")({
   head: () => ({
@@ -45,6 +45,25 @@ function PhotographyPage() {
           portraiture, dramatic landscapes and editorial studies, all bathed in
           the emotional light of twilight.
         </p>
+
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a
+            href={externalLinks.photographyPortfolio}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="rounded-full bg-dusk px-5 py-2.5 text-xs font-medium uppercase tracking-[0.15em] text-dusk-foreground transition-opacity hover:opacity-90"
+          >
+            Ayanfe Waves Visuals ↗
+          </a>
+          <a
+            href={externalLinks.photographyWhatsApp}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="rounded-full border border-border px-5 py-2.5 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Book a session
+          </a>
+        </div>
 
         <nav className="mt-12 flex flex-wrap gap-2">
           {photoCategories.map((category) => (
@@ -96,6 +115,16 @@ function PhotographyPage() {
               </figcaption>
             </figure>
           ))}
+        </div>
+        <div className="mt-16 flex justify-center">
+          <a
+            href={externalLinks.photographyGallery}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="font-serif text-lg italic text-muted-foreground transition-colors hover:text-dusk"
+          >
+            View the full gallery on Ayanfe Waves Visuals →
+          </a>
         </div>
       </section>
 
