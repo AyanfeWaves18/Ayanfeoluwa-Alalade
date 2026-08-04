@@ -18,7 +18,7 @@ function Index() {
         {/* Photography entry */}
         <div className="group relative flex flex-1 items-center justify-center overflow-hidden border-b border-border bg-twilight p-8 md:border-b-0 md:border-r">
           <img
-            src={images.heroPhotography}
+            src={images.duskAvenue}
             alt="Twilight seascape at blue hour"
             width={1024}
             height={1280}
@@ -107,8 +107,8 @@ function Index() {
             <figure className="group md:col-span-8">
               <div className="overflow-hidden rounded-xl">
                 <img
-                  src={images.photoPortrait}
-                  alt="Moody cinematic portrait in low warm light"
+                  src={images.hoodedPortrait}
+                  alt="Shrouded Gaze — hooded cinematic portrait"
                   width={1280}
                   height={864}
                   loading="lazy"
@@ -129,8 +129,8 @@ function Index() {
               <figure className="group">
                 <div className="overflow-hidden rounded-xl">
                   <img
-                    src={images.photoEditorial}
-                    alt="Editorial study of textured purple fabric"
+                    src={images.lavenderDress}
+                    alt="Lavender Poise — portrait in lavender dress"
                     width={896}
                     height={1120}
                     loading="lazy"
@@ -139,7 +139,7 @@ function Index() {
                 </div>
                 <figcaption className="mt-4">
                   <span className="font-serif text-lg italic">
-                    Texture Study No. 4
+                    Lavender Poise
                   </span>
                 </figcaption>
               </figure>
