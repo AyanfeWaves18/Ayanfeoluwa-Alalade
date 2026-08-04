@@ -8,13 +8,13 @@ import devProject2 from "@/assets/dev-project2.jpg";
 import synthesis from "@/assets/synthesis.jpg";
 
 // Real work pulled from Ayanfe Waves Visuals
-import hoodedPortrait from "@/assets/portfolio/ayanfe-hooded-portrait.png.asset.json";
-import lavenderDress from "@/assets/portfolio/ayanfe-lavender-dress.png.asset.json";
-import duskAvenue from "@/assets/portfolio/ayanfe-dusk-avenue.png.asset.json";
-import stormField from "@/assets/portfolio/ayanfe-storm-field.jpg.asset.json";
-import portraitSmile from "@/assets/portfolio/ayanfe-portrait-smile.png.asset.json";
-import portraitBack from "@/assets/portfolio/ayanfe-portrait-back.png.asset.json";
-import whiteShirt from "@/assets/portfolio/ayanfe-white-shirt.png.asset.json";
+import hoodedPortrait from "@/assets/portfolio/ayanfe-hooded-portrait.png";
+import lavenderDress from "@/assets/portfolio/ayanfe-lavender-dress.png";
+import duskAvenue from "@/assets/portfolio/ayanfe-dusk-avenue.png";
+import stormField from "@/assets/portfolio/ayanfe-storm-field.jpg";
+import portraitSmile from "@/assets/portfolio/ayanfe-portrait-smile.png";
+import portraitBack from "@/assets/portfolio/ayanfe-portrait-back.png";
+import whiteShirt from "@/assets/portfolio/ayanfe-white-shirt.png";
 
 export const images = {
   heroPhotography,
@@ -25,13 +25,13 @@ export const images = {
   devProject1,
   devProject2,
   synthesis,
-  hoodedPortrait: hoodedPortrait.url,
-  lavenderDress: lavenderDress.url,
-  duskAvenue: duskAvenue.url,
-  stormField: stormField.url,
-  portraitSmile: portraitSmile.url,
-  portraitBack: portraitBack.url,
-  whiteShirt: whiteShirt.url,
+  hoodedPortrait,
+  lavenderDress,
+  duskAvenue,
+  stormField,
+  portraitSmile,
+  portraitBack,
+  whiteShirt,
 };
 
 export type Photo = {
@@ -44,49 +44,49 @@ export type Photo = {
 
 export const photos: Photo[] = [
   {
-    src: hoodedPortrait.url,
+    src: hoodedPortrait,
     title: "Shrouded Gaze",
     category: "Portraits",
     meta: "Portrait",
     span: "wide",
   },
   {
-    src: lavenderDress.url,
+    src: lavenderDress,
     title: "Lavender Poise",
     category: "Portraits",
     meta: "Portrait",
     span: "tall",
   },
   {
-    src: stormField.url,
+    src: stormField,
     title: "Gathering Storm",
     category: "Nature",
     meta: "Landscape",
     span: "wide",
   },
   {
-    src: portraitSmile.url,
+    src: portraitSmile,
     title: "Quiet Joy",
     category: "Portraits",
     meta: "Portrait",
     span: "tall",
   },
   {
-    src: duskAvenue.url,
+    src: duskAvenue,
     title: "Dusk Avenue",
     category: "Nature",
     meta: "Landscape",
     span: "wide",
   },
   {
-    src: whiteShirt.url,
+    src: whiteShirt,
     title: "White Study",
     category: "Editorial",
     meta: "Editorial",
     span: "tall",
   },
   {
-    src: portraitBack.url,
+    src: portraitBack,
     title: "Turned Away",
     category: "Editorial",
     meta: "Editorial",
