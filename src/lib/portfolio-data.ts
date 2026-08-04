@@ -7,6 +7,15 @@ import devProject1 from "@/assets/dev-project1.jpg";
 import devProject2 from "@/assets/dev-project2.jpg";
 import synthesis from "@/assets/synthesis.jpg";
 
+// Real work pulled from Ayanfe Waves Visuals
+import hoodedPortrait from "@/assets/portfolio/ayanfe-hooded-portrait.png.asset.json";
+import lavenderDress from "@/assets/portfolio/ayanfe-lavender-dress.png.asset.json";
+import duskAvenue from "@/assets/portfolio/ayanfe-dusk-avenue.png.asset.json";
+import stormField from "@/assets/portfolio/ayanfe-storm-field.jpg.asset.json";
+import portraitSmile from "@/assets/portfolio/ayanfe-portrait-smile.png.asset.json";
+import portraitBack from "@/assets/portfolio/ayanfe-portrait-back.png.asset.json";
+import whiteShirt from "@/assets/portfolio/ayanfe-white-shirt.png.asset.json";
+
 export const images = {
   heroPhotography,
   photoPortrait,
@@ -16,6 +25,13 @@ export const images = {
   devProject1,
   devProject2,
   synthesis,
+  hoodedPortrait: hoodedPortrait.url,
+  lavenderDress: lavenderDress.url,
+  duskAvenue: duskAvenue.url,
+  stormField: stormField.url,
+  portraitSmile: portraitSmile.url,
+  portraitBack: portraitBack.url,
+  whiteShirt: whiteShirt.url,
 };
 
 export type Photo = {
@@ -28,41 +44,63 @@ export type Photo = {
 
 export const photos: Photo[] = [
   {
-    src: photoPortrait,
+    src: hoodedPortrait.url,
     title: "Shrouded Gaze",
     category: "Portraits",
     meta: "2024 — Portrait",
     span: "wide",
   },
   {
-    src: photoEditorial,
-    title: "Texture Study",
-    category: "Editorial",
-    meta: "2024 — Editorial",
-    span: "tall",
-  },
-  {
-    src: photoNature,
-    title: "Gathering Storm",
-    category: "Nature",
-    meta: "2023 — Landscape",
-    span: "wide",
-  },
-  {
-    src: photoPortrait2,
+    src: lavenderDress.url,
     title: "Lavender Poise",
     category: "Portraits",
     meta: "2024 — Portrait",
     span: "tall",
   },
   {
-    src: heroPhotography,
+    src: stormField.url,
+    title: "Gathering Storm",
+    category: "Nature",
+    meta: "2023 — Landscape",
+    span: "wide",
+  },
+  {
+    src: portraitSmile.url,
+    title: "Quiet Joy",
+    category: "Portraits",
+    meta: "2024 — Portrait",
+    span: "tall",
+  },
+  {
+    src: duskAvenue.url,
     title: "Dusk Avenue",
     category: "Nature",
     meta: "2023 — Landscape",
     span: "wide",
   },
+  {
+    src: whiteShirt.url,
+    title: "White Study",
+    category: "Editorial",
+    meta: "2024 — Editorial",
+    span: "tall",
+  },
+  {
+    src: portraitBack.url,
+    title: "Turned Away",
+    category: "Editorial",
+    meta: "2024 — Editorial",
+    span: "wide",
+  },
+  {
+    src: photoEditorial,
+    title: "Texture Study No. 4",
+    category: "Editorial",
+    meta: "2024 — Editorial",
+    span: "tall",
+  },
 ];
+
 
 export const externalLinks = {
   photographyPortfolio: "https://ayanfewavesvisuals.lovable.app/",
