@@ -8,13 +8,13 @@ import devProject2 from "@/assets/dev-project2.jpg";
 import synthesis from "@/assets/synthesis.jpg";
 
 // Real work pulled from Ayanfe Waves Visuals
-import hoodedPortrait from "@/assets/portfolio/ayanfe-hooded-portrait.png.asset.json";
-import lavenderDress from "@/assets/portfolio/ayanfe-lavender-dress.png.asset.json";
-import duskAvenue from "@/assets/portfolio/ayanfe-dusk-avenue.png.asset.json";
-import stormField from "@/assets/portfolio/ayanfe-storm-field.jpg.asset.json";
-import portraitSmile from "@/assets/portfolio/ayanfe-portrait-smile.png.asset.json";
-import portraitBack from "@/assets/portfolio/ayanfe-portrait-back.png.asset.json";
-import whiteShirt from "@/assets/portfolio/ayanfe-white-shirt.png.asset.json";
+import hoodedPortrait from "@/assets/portfolio/ayanfe-hooded-portrait.png";
+import lavenderDress from "@/assets/portfolio/ayanfe-lavender-dress.png";
+import duskAvenue from "@/assets/portfolio/ayanfe-dusk-avenue.png";
+import stormField from "@/assets/portfolio/ayanfe-storm-field.jpg";
+import portraitSmile from "@/assets/portfolio/ayanfe-portrait-smile.png";
+import portraitBack from "@/assets/portfolio/ayanfe-portrait-back.png";
+import whiteShirt from "@/assets/portfolio/ayanfe-white-shirt.png";
 
 export const images = {
   heroPhotography,
