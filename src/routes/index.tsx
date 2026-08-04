@@ -120,7 +120,7 @@ function Index() {
                   Shrouded Gaze
                 </span>
                 <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
-                  2024 — Portrait
+                  Portrait
                 </span>
               </figcaption>
             </figure>
