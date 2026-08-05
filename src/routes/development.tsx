@@ -69,6 +69,14 @@ function DevelopmentPage() {
           >
             LinkedIn
           </a>
+          <a
+            href={externalLinks.generalWhatsApp}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="rounded-md bg-mint px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-mint-foreground transition-opacity hover:opacity-90"
+          >
+            WhatsApp
+          </a>
         </div>
       </section>
 
