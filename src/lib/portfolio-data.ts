@@ -3,8 +3,8 @@ import photoPortrait from "@/assets/photo-portrait.jpg";
 import photoPortrait2 from "@/assets/photo-portrait2.jpg";
 import photoEditorial from "@/assets/photo-editorial.jpg";
 import photoNature from "@/assets/photo-nature.jpg";
-import devProject1 from "@/assets/portfolio/teal-gold-mini-store.png.asset.json";
-import devProject2 from "@/assets/portfolio/nike-rebrand.png.asset.json";
+import devProject1 from "@/assets/portfolio/teal-gold-mini-store.png";
+import devProject2 from "@/assets/portfolio/nike-rebrand.png";
 import synthesis from "@/assets/synthesis.jpg";
 
 // Real work pulled from Ayanfe Waves Visuals
@@ -22,8 +22,8 @@ export const images = {
   photoPortrait2,
   photoEditorial,
   photoNature,
-  devProject1: devProject1.url,
-  devProject2: devProject2.url,
+  devProject1,
+  devProject2,
   synthesis,
   hoodedPortrait,
   lavenderDress,

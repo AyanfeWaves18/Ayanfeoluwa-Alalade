@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { images, projects, techStack } from "@/lib/portfolio-data";
+import { externalLinks, images, projects, techStack } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -280,6 +280,14 @@ function Index() {
               className="inline-flex rounded-full px-6 py-3 font-mono text-sm text-muted-foreground ring-1 ring-border transition-colors hover:text-mint"
             >
               Front End portfolio ↗
+            </a>
+            <a
+              href={externalLinks.generalWhatsApp}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex rounded-full bg-mint px-6 py-3 font-mono text-sm text-mint-foreground transition-opacity hover:opacity-90"
+            >
+              Discuss a project on WhatsApp
             </a>
           </div>
 
