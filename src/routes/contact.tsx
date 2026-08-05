@@ -100,8 +100,8 @@ function ContactPage() {
                 href={`mailto:${service.email}`}
                 className={
                   service.tone === "dusk"
-                    ? "mt-8 block break-words text-sm font-medium text-foreground transition-colors hover:text-dusk"
-                    : "mt-8 block break-words text-sm font-medium text-foreground transition-colors hover:text-mint"
+                    ? "mt-8 block break-all text-sm font-medium text-foreground transition-colors hover:text-dusk"
+                    : "mt-8 block break-all text-sm font-medium text-foreground transition-colors hover:text-mint"
                 }
               >
                 {service.email} →
@@ -112,8 +112,8 @@ function ContactPage() {
                 rel="noreferrer noopener"
                 className={
                   service.tone === "dusk"
-                    ? "mt-3 block break-words text-sm text-muted-foreground transition-colors hover:text-dusk"
-                    : "mt-3 block break-words text-sm text-muted-foreground transition-colors hover:text-mint"
+                    ? "mt-3 block break-all text-sm text-muted-foreground transition-colors hover:text-dusk"
+                    : "mt-3 block break-all text-sm text-muted-foreground transition-colors hover:text-mint"
                 }
               >
                 {service.portfolioLabel} ↗

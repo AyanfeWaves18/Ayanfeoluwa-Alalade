@@ -11,7 +11,7 @@ export function SiteFooter() {
             </p>
             <a
               href="mailto:ayanfeoluwaalalade2000@gmail.com"
-              className="mt-6 block break-words font-serif text-3xl italic leading-tight tracking-tight text-foreground transition-colors hover:text-dusk sm:text-4xl md:text-5xl"
+              className="mt-6 block break-all font-serif text-3xl italic leading-tight tracking-tight text-foreground transition-colors hover:text-dusk sm:text-4xl md:text-5xl"
             >
               ayanfeoluwaalalade2000@gmail.com
             </a>
@@ -22,7 +22,7 @@ export function SiteFooter() {
           </div>
 
           <div className="flex flex-col gap-6 md:items-end">
-            <div className="flex flex-col gap-3">
+            <div className="flex w-full min-w-0 flex-col gap-3">
               <a
                 href="mailto:ayanfewavesvisuals@gmail.com"
                 className="group flex items-center gap-3 text-sm font-medium text-foreground/90 transition-colors hover:text-dusk"
@@ -30,7 +30,7 @@ export function SiteFooter() {
                 <span className="rounded bg-dusk/15 px-1.5 py-0.5 text-[10px] font-mono text-dusk">
                   P
                 </span>
-                ayanfewavesvisuals@gmail.com
+                <span className="break-all">ayanfewavesvisuals@gmail.com</span>
               </a>
               <a
                 href="mailto:ayanfeoluwaalalade2000@gmail.com"
@@ -39,7 +39,7 @@ export function SiteFooter() {
                 <span className="rounded bg-mint/15 px-1.5 py-0.5 text-[10px] font-mono text-mint">
                   D
                 </span>
-                ayanfeoluwaalalade2000@gmail.com
+                <span className="break-all">ayanfeoluwaalalade2000@gmail.com</span>
               </a>
             </div>
 
