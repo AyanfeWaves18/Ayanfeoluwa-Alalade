@@ -2,9 +2,20 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { images, projects, techStack } from "@/lib/portfolio-data";
+import { externalLinks, images, projects, techStack } from "@/lib/portfolio-data";
+import logoAsset from "@/assets/brand/ayanfeoluwa-alalade-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Ayanfeoluwa Alalade — Photographer & Front End Developer" },
+      { name: "description", content: "Explore Ayanfeoluwa Alalade's cinematic photography and front-end development portfolio." },
+      { property: "og:title", content: "Ayanfeoluwa Alalade — Lens & Logic" },
+      { property: "og:description", content: "Cinematic photography and thoughtful front-end development by one creator." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
@@ -62,8 +73,14 @@ function Index() {
 
         {/* Central brand */}
         <div className="absolute left-1/2 top-1/2 z-20 hidden -translate-x-1/2 -translate-y-1/2 lg:block">
-          <div className="grid size-24 place-items-center rounded-full border border-border bg-background shadow-lift">
-            <span className="font-serif text-xl italic">AO</span>
+          <div className="size-24 overflow-hidden rounded-full border border-border bg-background shadow-lift">
+            <img
+              src={logoAsset.url}
+              alt="Ayanfeoluwa Alalade logo"
+              width={96}
+              height={96}
+              className="size-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -196,7 +213,7 @@ function Index() {
         </div>
       </section>
 
-      {/* Development world (cool) */}
+      {/* Front End Development world (cool) */}
       <section className="bg-terminal py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-16 flex items-center gap-4">
@@ -269,7 +286,15 @@ function Index() {
               rel="noreferrer noopener"
               className="inline-flex rounded-full px-6 py-3 font-mono text-sm text-muted-foreground ring-1 ring-border transition-colors hover:text-mint"
             >
-              Dev portfolio ↗
+              Front End portfolio ↗
+            </a>
+            <a
+              href={externalLinks.generalWhatsApp}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex rounded-full bg-mint px-6 py-3 font-mono text-sm text-mint-foreground transition-opacity hover:opacity-90"
+            >
+              Discuss a project on WhatsApp
             </a>
           </div>
 

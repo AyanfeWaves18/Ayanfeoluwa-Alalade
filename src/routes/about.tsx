@@ -99,7 +99,7 @@ function AboutPage() {
               The Logic
             </span>
             <p className="mt-3 font-mono text-2xl tracking-tighter">
-              Explore the development →
+              Explore front end development →
             </p>
           </Link>
         </div>

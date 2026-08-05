@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
+import { externalLinks } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -36,7 +37,7 @@ const services = [
   {
     tone: "mint" as const,
     tag: "D",
-    label: "Development",
+    label: "Front End Development",
     items: ["Frontend builds", "Landing pages", "Design systems", "UI work"],
     email: "ayanfeoluwaalalade2000@gmail.com",
     portfolio: "https://ayanfeoluwasportfolio.vercel.app/",
@@ -124,6 +125,14 @@ function ContactPage() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-[11px] font-medium uppercase tracking-[0.25em] text-muted-foreground">
+          <a
+            href={externalLinks.generalWhatsApp}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="rounded-md bg-mint px-4 py-2 text-mint-foreground transition-opacity hover:opacity-90"
+          >
+            WhatsApp
+          </a>
           <a
             href="https://www.tiktok.com/@ayanfewaves_visuals1"
             target="_blank"

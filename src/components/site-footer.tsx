@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { externalLinks } from "@/lib/portfolio-data";
 
 export function SiteFooter() {
   return (
@@ -58,11 +59,19 @@ export function SiteFooter() {
                 rel="noreferrer noopener"
                 className="text-muted-foreground transition-colors hover:text-mint"
               >
-                Development portfolio ↗
+                Front End Development portfolio ↗
               </a>
             </div>
 
             <div className="flex gap-6 text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground">
+              <a
+                href={externalLinks.generalWhatsApp}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="transition-colors hover:text-mint"
+              >
+                WhatsApp
+              </a>
               <a
                 href="https://www.tiktok.com/@ayanfewaves_visuals1"
                 target="_blank"
