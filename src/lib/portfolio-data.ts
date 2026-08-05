@@ -3,8 +3,8 @@ import photoPortrait from "@/assets/photo-portrait.jpg";
 import photoPortrait2 from "@/assets/photo-portrait2.jpg";
 import photoEditorial from "@/assets/photo-editorial.jpg";
 import photoNature from "@/assets/photo-nature.jpg";
-import devProject1 from "@/assets/dev-project1.jpg";
-import devProject2 from "@/assets/dev-project2.jpg";
+import devProject1 from "@/assets/portfolio/teal-gold-mini-store.png.asset.json";
+import devProject2 from "@/assets/portfolio/nike-rebrand.png.asset.json";
 import synthesis from "@/assets/synthesis.jpg";
 
 // Real work pulled from Ayanfe Waves Visuals
@@ -22,8 +22,8 @@ export const images = {
   photoPortrait2,
   photoEditorial,
   photoNature,
-  devProject1,
-  devProject2,
+  devProject1: devProject1.url,
+  devProject2: devProject2.url,
   synthesis,
   hoodedPortrait,
   lavenderDress,
@@ -106,7 +106,9 @@ export const externalLinks = {
   photographyPortfolio: "https://ayanfewavesvisuals.lovable.app/",
   photographyGallery: "https://ayanfewavesvisuals.lovable.app/portfolio",
   photographyWhatsApp:
-    "https://wa.me/message/QJFLNZ6VPBP6C1?text=Hi%2C%20Ayanfe%20I%27d%20like%20to%20book%20a%20photography%20session.",
+    "https://wa.me/2348167829017?text=Hi%20Ayanfeoluwa%2C%20I%27d%20like%20to%20book%20a%20photography%20session.",
+  generalWhatsApp:
+    "https://wa.me/2348167829017?text=Hi%20Ayanfeoluwa%2C%20I%27d%20like%20to%20discuss%20a%20project.",
   devPortfolio: "https://ayanfeoluwasportfolio.vercel.app/",
   devProjects: "https://ayanfeoluwasportfolio.vercel.app/#projects",
   tiktok: "https://www.tiktok.com/@ayanfewaves_visuals1",
@@ -142,7 +144,7 @@ export const projects: Project[] = [
     statusTone: "live",
     image: devProject1,
     stack: ["HTML", "CSS", "JavaScript"],
-    href: "https://ayanfeoluwasportfolio.vercel.app/#projects",
+    href: "https://teal-and-gold-mini-store.vercel.app/",
   },
   {
     index: "[02]",
@@ -153,7 +155,7 @@ export const projects: Project[] = [
     statusTone: "version",
     image: devProject2,
     stack: ["HTML", "CSS", "JavaScript"],
-    href: "https://ayanfeoluwasportfolio.vercel.app/#projects",
+    href: "https://nike-rebrand-lemon.vercel.app/",
   },
 ];
 

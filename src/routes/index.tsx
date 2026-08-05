@@ -5,6 +5,16 @@ import { SiteFooter } from "@/components/site-footer";
 import { images, projects, techStack } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Ayanfeoluwa Alalade — Photographer & Front End Developer" },
+      { name: "description", content: "Explore Ayanfeoluwa Alalade's cinematic photography and front-end development portfolio." },
+      { property: "og:title", content: "Ayanfeoluwa Alalade — Lens & Logic" },
+      { property: "og:description", content: "Cinematic photography and thoughtful front-end development by one creator." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
@@ -196,7 +206,7 @@ function Index() {
         </div>
       </section>
 
-      {/* Development world (cool) */}
+      {/* Front End Development world (cool) */}
       <section className="bg-terminal py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-16 flex items-center gap-4">
@@ -269,7 +279,7 @@ function Index() {
               rel="noreferrer noopener"
               className="inline-flex rounded-full px-6 py-3 font-mono text-sm text-muted-foreground ring-1 ring-border transition-colors hover:text-mint"
             >
-              Dev portfolio ↗
+              Front End portfolio ↗
             </a>
           </div>
 

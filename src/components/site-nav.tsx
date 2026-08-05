@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import logoAsset from "@/assets/brand/ayanfeoluwa-alalade-logo.png.asset.json";
 import {
   Sheet,
   SheetClose,
@@ -15,7 +16,7 @@ import {
 const links = [
   { to: "/", label: "Home" },
   { to: "/photography", label: "Photography" },
-  { to: "/development", label: "Development" },
+  { to: "/development", label: "Front End Development" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -29,15 +30,19 @@ export function SiteNav() {
           className="group flex min-w-0 items-center gap-3"
           aria-label="Ayanfeoluwa Alalade — home"
         >
-          <span className="grid size-9 shrink-0 place-items-center rounded-full border border-border bg-background/70 font-serif text-sm italic backdrop-blur">
-            AO
-          </span>
+          <img
+            src={logoAsset.url}
+            alt=""
+            width={48}
+            height={48}
+            className="size-11 shrink-0 rounded-full border border-border object-cover"
+          />
           <span className="truncate text-sm font-medium tracking-tight text-foreground/90">
             Ayanfeoluwa Alalade
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 rounded-full border border-border/70 bg-background/60 px-1.5 py-1.5 backdrop-blur md:flex">
+        <nav className="hidden items-center gap-1 rounded-full border border-border/70 bg-background/60 px-1.5 py-1.5 backdrop-blur lg:flex">
           {links.map((link) => (
             <Link
               key={link.to}
@@ -56,7 +61,7 @@ export function SiteNav() {
               type="button"
               variant="outline"
               size="icon"
-              className="size-10 shrink-0 rounded-full border-border/70 bg-background/70 backdrop-blur md:hidden"
+              className="size-10 shrink-0 rounded-full border-border/70 bg-background/70 backdrop-blur lg:hidden"
               aria-label="Open navigation menu"
             >
               <Menu aria-hidden="true" />

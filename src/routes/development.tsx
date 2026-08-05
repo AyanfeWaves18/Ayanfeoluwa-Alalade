@@ -7,18 +7,20 @@ import { externalLinks, projects, skills, techStack } from "@/lib/portfolio-data
 export const Route = createFileRoute("/development")({
   head: () => ({
     meta: [
-      { title: "Development — Ayanfeoluwa Alalade | The Logic" },
+      { title: "Front End Development — Ayanfeoluwa Alalade" },
       {
         name: "description",
         content:
           "Frontend projects, skills and tech stack. Clean, responsive, accessible interfaces built with React, TypeScript and modern CSS.",
       },
-      { property: "og:title", content: "Development — The Logic" },
+      { property: "og:title", content: "Front End Development — The Logic" },
       {
         property: "og:description",
         content:
           "Frontend engineering: performant, accessible, beautifully built interfaces.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: DevelopmentPage,
@@ -31,7 +33,7 @@ function DevelopmentPage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-16 pt-36 md:pt-44">
         <span className="mb-5 block font-mono text-[11px] uppercase tracking-[0.3em] text-mint">
-          02 — Development · The Logic
+          02 — Front End Development · The Logic
         </span>
         <h1 className="max-w-4xl text-balance font-mono text-4xl font-medium leading-[1.1] tracking-tighter text-foreground md:text-6xl">
           Code as a creative medium.
@@ -49,7 +51,7 @@ function DevelopmentPage() {
             rel="noreferrer noopener"
             className="rounded-md bg-mint px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-mint-foreground transition-opacity hover:opacity-90"
           >
-            Dev portfolio ↗
+            Front End portfolio ↗
           </a>
           <a
             href={externalLinks.github}
