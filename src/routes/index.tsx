@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { externalLinks, images, projects, techStack } from "@/lib/portfolio-data";
+import logoAsset from "@/assets/brand/ayanfeoluwa-alalade-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -72,8 +73,14 @@ function Index() {
 
         {/* Central brand */}
         <div className="absolute left-1/2 top-1/2 z-20 hidden -translate-x-1/2 -translate-y-1/2 lg:block">
-          <div className="grid size-24 place-items-center rounded-full border border-border bg-background shadow-lift">
-            <span className="font-serif text-xl italic">AO</span>
+          <div className="size-24 overflow-hidden rounded-full border border-border bg-background shadow-lift">
+            <img
+              src={logoAsset.url}
+              alt="Ayanfeoluwa Alalade logo"
+              width={96}
+              height={96}
+              className="size-full object-cover"
+            />
           </div>
         </div>
       </section>
