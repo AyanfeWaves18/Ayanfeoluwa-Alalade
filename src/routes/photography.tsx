@@ -20,6 +20,31 @@ export const Route = createFileRoute("/photography")({
         content:
           "A cinematic archive of portraits, nature and editorial work in twilight tones.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://artful-engineer-spot.lovable.app/photography",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Photography — Ayanfeoluwa Alalade",
+          url: "https://artful-engineer-spot.lovable.app/photography",
+          description:
+            "A cinematic collection of portrait, nature and editorial photography by Ayanfeoluwa Alalade.",
+          creator: {
+            "@type": "Person",
+            name: "Ayanfeoluwa Alalade",
+          },
+        }),
+      },
     ],
   }),
   component: PhotographyPage,
