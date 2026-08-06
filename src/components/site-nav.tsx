@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import logoAsset from "@/assets/brand/ayanfeoluwa-alalade-logo.png.asset.json";
+import logo from "@/assets/brand/ayanfeoluwa-alalade-logo.png";
 import {
   Sheet,
   SheetClose,
@@ -31,7 +31,7 @@ export function SiteNav() {
           aria-label="Ayanfeoluwa Alalade — home"
         >
           <img
-            src={logoAsset.url}
+            src={logo}
             alt=""
             width={48}
             height={48}
