@@ -22,6 +22,29 @@ export const Route = createFileRoute("/development")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://artful-engineer-spot.lovable.app/development",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Front End Development — Ayanfeoluwa Alalade",
+          url: "https://artful-engineer-spot.lovable.app/development",
+          description:
+            "A collection of front end development projects by Ayanfeoluwa Alalade.",
+          creator: {
+            "@type": "Person",
+            name: "Ayanfeoluwa Alalade",
+          },
+        }),
+      },
+    ],
   }),
   component: DevelopmentPage,
 });

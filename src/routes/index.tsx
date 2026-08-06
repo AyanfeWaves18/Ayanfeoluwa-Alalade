@@ -15,6 +15,39 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      { rel: "canonical", href: "https://artful-engineer-spot.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Ayanfeoluwa Alalade",
+          url: "https://artful-engineer-spot.lovable.app/",
+          jobTitle: "Photographer & Front End Developer",
+          sameAs: [
+            externalLinks.photographyPortfolio,
+            externalLinks.devPortfolio,
+            externalLinks.tiktok,
+            externalLinks.github,
+            externalLinks.linkedin,
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Ayanfeoluwa Alalade Portfolio",
+          url: "https://artful-engineer-spot.lovable.app/",
+          description:
+            "The photography and front end development portfolio of Ayanfeoluwa Alalade.",
+        }),
+      },
+    ],
   }),
   component: Index,
 });
@@ -23,6 +56,10 @@ function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
+
+      <h1 className="sr-only">
+        Ayanfeoluwa Alalade — Photographer & Front End Developer
+      </h1>
 
       {/* Hero — the dual split */}
       <section className="relative flex min-h-screen flex-col border-b border-border md:flex-row">
@@ -40,9 +77,9 @@ function Index() {
             <span className="mb-4 block font-mono text-xs uppercase tracking-[0.3em] text-dusk">
               Visual Storytelling
             </span>
-            <h1 className="mb-8 font-serif text-5xl font-medium italic leading-none text-foreground md:text-7xl">
+            <h2 className="mb-8 font-serif text-5xl font-medium italic leading-none text-foreground md:text-7xl">
               The Lens
-            </h1>
+            </h2>
             <Link
               to="/photography"
               className="inline-flex rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background ring-1 ring-foreground transition-colors hover:bg-dusk hover:text-dusk-foreground hover:ring-dusk"
@@ -59,9 +96,9 @@ function Index() {
             <span className="mb-4 block font-mono text-xs uppercase tracking-[0.3em] text-mint">
               Technical Architecture
             </span>
-            <h1 className="mb-8 font-mono text-5xl font-medium leading-none tracking-tighter text-foreground md:text-7xl">
+            <h2 className="mb-8 font-mono text-5xl font-medium leading-none tracking-tighter text-foreground md:text-7xl">
               The Logic
-            </h1>
+            </h2>
             <Link
               to="/development"
               className="inline-flex rounded-full bg-secondary px-6 py-3 text-sm font-medium text-mint ring-1 ring-mint/50 transition-colors hover:bg-mint hover:text-mint-foreground"
