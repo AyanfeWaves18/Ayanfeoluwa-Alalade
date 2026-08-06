@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { externalLinks, images, projects, techStack } from "@/lib/portfolio-data";
-import logoAsset from "@/assets/brand/ayanfeoluwa-alalade-logo.png.asset.json";
+import logo from "@/assets/brand/ayanfeoluwa-alalade-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -112,7 +112,7 @@ function Index() {
         <div className="absolute left-1/2 top-1/2 z-20 hidden -translate-x-1/2 -translate-y-1/2 lg:block">
           <div className="size-24 overflow-hidden rounded-full border border-border bg-background shadow-lift">
             <img
-              src={logoAsset.url}
+              src={logo}
               alt="Ayanfeoluwa Alalade logo"
               width={96}
               height={96}
