@@ -7,17 +7,44 @@ import { images } from "@/lib/portfolio-data";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Ayanfeoluwa Alalade | One creator, two crafts" },
+      { title: "About Ayanfeoluwa Alalade — Photographer & Front End Developer" },
       {
         name: "description",
         content:
-          "The story of Ayanfeoluwa Alalade — a Lagos-based photographer and frontend developer working at the intersection of cinematic emotion and engineered precision.",
+          "The story of Ayanfeoluwa Alalade (Alalade Ayanfeoluwa) — a Nigeria-based photographer and front end developer working at the intersection of cinematic emotion and engineered precision.",
       },
-      { property: "og:title", content: "About — Ayanfeoluwa Alalade" },
+      { property: "og:title", content: "About Ayanfeoluwa Alalade" },
       {
         property: "og:description",
         content:
-          "One creator, two crafts: the story bridging photography and frontend development.",
+          "One creator, two crafts: the story bridging photography and front end development.",
+      },
+      { property: "og:type", content: "profile" },
+      { property: "og:url", content: "https://artful-engineer-spot.lovable.app/about" },
+      { property: "og:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://artful-engineer-spot.lovable.app/about" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          url: "https://artful-engineer-spot.lovable.app/about",
+          name: "About Ayanfeoluwa Alalade",
+          mainEntity: {
+            "@type": "Person",
+            "@id": "https://artful-engineer-spot.lovable.app/#person",
+            name: "Ayanfeoluwa Alalade",
+            alternateName: ["Alalade Ayanfeoluwa", "Ayanfe Waves Visuals"],
+            jobTitle: ["Photographer", "Front End Developer"],
+            url: "https://artful-engineer-spot.lovable.app/",
+          },
+        }),
       },
     ],
   }),
