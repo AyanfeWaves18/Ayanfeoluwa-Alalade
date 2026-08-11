@@ -20,7 +20,10 @@ export const Route = createFileRoute("/development")({
           "Frontend engineering: performant, accessible, beautifully built interfaces.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://artful-engineer-spot.lovable.app/development" },
+      { property: "og:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
     ],
     links: [
       {
@@ -40,8 +43,37 @@ export const Route = createFileRoute("/development")({
             "A collection of front end development projects by Ayanfeoluwa Alalade.",
           creator: {
             "@type": "Person",
+            "@id": "https://artful-engineer-spot.lovable.app/#person",
             name: "Ayanfeoluwa Alalade",
+            alternateName: ["Alalade Ayanfeoluwa"],
+            url: "https://artful-engineer-spot.lovable.app/",
+            sameAs: [
+              externalLinks.devPortfolio,
+              externalLinks.github,
+              externalLinks.linkedin,
+            ],
           },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Ayanfeoluwa Alalade",
+              item: "https://artful-engineer-spot.lovable.app/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Front End Development",
+              item: "https://artful-engineer-spot.lovable.app/development",
+            },
+          ],
         }),
       },
     ],
