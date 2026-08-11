@@ -7,17 +7,44 @@ import { externalLinks } from "@/lib/portfolio-data";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Ayanfeoluwa Alalade" },
+      { title: "Contact Ayanfeoluwa Alalade — Photography & Front End Work" },
       {
         name: "description",
         content:
-          "Get in touch with Ayanfeoluwa Alalade for photography sessions or frontend development work.",
+          "Get in touch with Ayanfeoluwa Alalade (Alalade Ayanfeoluwa) for photography sessions or front end development work — email or WhatsApp.",
       },
-      { property: "og:title", content: "Contact — Ayanfeoluwa Alalade" },
+      { property: "og:title", content: "Contact Ayanfeoluwa Alalade" },
       {
         property: "og:description",
         content:
           "Let's create something worth remembering — for the lens or the screen.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://artful-engineer-spot.lovable.app/contact" },
+      { property: "og:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://artful-engineer-spot.lovable.app/contact" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          url: "https://artful-engineer-spot.lovable.app/contact",
+          name: "Contact Ayanfeoluwa Alalade",
+          mainEntity: {
+            "@type": "Person",
+            "@id": "https://artful-engineer-spot.lovable.app/#person",
+            name: "Ayanfeoluwa Alalade",
+            alternateName: ["Alalade Ayanfeoluwa"],
+            email: "mailto:ayanfeoluwaalalade2000@gmail.com",
+            telephone: "+2348167829017",
+          },
+        }),
       },
     ],
   }),
