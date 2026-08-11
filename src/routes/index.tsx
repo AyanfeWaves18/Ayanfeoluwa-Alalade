@@ -260,7 +260,9 @@ function Index() {
               moments with the soul of a poet.
             </h2>
             <p className="mb-10 max-w-[52ch] text-pretty leading-relaxed text-muted-foreground">
-              A cross-disciplinary creator. By day I architect performant
+              I'm <strong className="font-medium text-foreground">Ayanfeoluwa Alalade</strong>{" "}
+              (also written Alalade Ayanfeoluwa), a cross-disciplinary creator
+              based in Nigeria. By day I architect performant
               frontend systems with React and TypeScript. By night I explore the
               cinematic intersections of everyday life through my lens. The
               precision of one shapes the emotion of the other.
