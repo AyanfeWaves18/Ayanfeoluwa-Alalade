@@ -9,11 +9,14 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Ayanfeoluwa Alalade — Photographer & Front End Developer" },
-      { name: "description", content: "Explore Ayanfeoluwa Alalade's cinematic photography and front-end development portfolio." },
-      { property: "og:title", content: "Ayanfeoluwa Alalade — Lens & Logic" },
-      { property: "og:description", content: "Cinematic photography and thoughtful front-end development by one creator." },
+      { name: "description", content: "Ayanfeoluwa Alalade (Alalade Ayanfeoluwa) is a Nigerian photographer and front end developer. Explore the cinematic photography of Ayanfe Waves Visuals and his front end projects." },
+      { property: "og:title", content: "Ayanfeoluwa Alalade — Photographer & Front End Developer" },
+      { property: "og:description", content: "Cinematic photography and thoughtful front-end development by Ayanfeoluwa Alalade." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://artful-engineer-spot.lovable.app/" },
+      { property: "og:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
     ],
     links: [
       { rel: "canonical", href: "https://artful-engineer-spot.lovable.app/" },
@@ -23,17 +26,49 @@ export const Route = createFileRoute("/")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Person",
-          name: "Ayanfeoluwa Alalade",
+          "@type": "ProfilePage",
+          "@id": "https://artful-engineer-spot.lovable.app/#profilepage",
           url: "https://artful-engineer-spot.lovable.app/",
-          jobTitle: "Photographer & Front End Developer",
-          sameAs: [
-            externalLinks.photographyPortfolio,
-            externalLinks.devPortfolio,
-            externalLinks.tiktok,
-            externalLinks.github,
-            externalLinks.linkedin,
-          ],
+          name: "Ayanfeoluwa Alalade — Photographer & Front End Developer",
+          mainEntity: {
+            "@type": "Person",
+            "@id": "https://artful-engineer-spot.lovable.app/#person",
+            name: "Ayanfeoluwa Alalade",
+            alternateName: [
+              "Alalade Ayanfeoluwa",
+              "Ayanfeoluwa Alalade Photography",
+              "Ayanfe Waves Visuals",
+              "AyanfeWaves",
+            ],
+            givenName: "Ayanfeoluwa",
+            familyName: "Alalade",
+            url: "https://artful-engineer-spot.lovable.app/",
+            image: "https://artful-engineer-spot.lovable.app/og-image.png",
+            jobTitle: ["Photographer", "Front End Developer"],
+            description:
+              "Ayanfeoluwa Alalade is a Nigerian photographer and front end developer working across cinematic visual storytelling and web interfaces.",
+            nationality: "Nigerian",
+            address: { "@type": "PostalAddress", addressCountry: "NG" },
+            knowsAbout: [
+              "Photography",
+              "Portrait photography",
+              "Editorial photography",
+              "Front end development",
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "React",
+              "TypeScript",
+            ],
+            email: "mailto:ayanfeoluwaalalade2000@gmail.com",
+            sameAs: [
+              externalLinks.photographyPortfolio,
+              externalLinks.devPortfolio,
+              externalLinks.tiktok,
+              externalLinks.github,
+              externalLinks.linkedin,
+            ],
+          },
         }),
       },
       {
@@ -41,10 +76,14 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Ayanfeoluwa Alalade Portfolio",
+          "@id": "https://artful-engineer-spot.lovable.app/#website",
+          name: "Ayanfeoluwa Alalade",
+          alternateName: ["Alalade Ayanfeoluwa", "Ayanfeoluwa Alalade Portfolio"],
           url: "https://artful-engineer-spot.lovable.app/",
+          inLanguage: "en",
           description:
-            "The photography and front end development portfolio of Ayanfeoluwa Alalade.",
+            "The official website of Ayanfeoluwa Alalade — photographer and front end developer.",
+          publisher: { "@id": "https://artful-engineer-spot.lovable.app/#person" },
         }),
       },
     ],
@@ -221,7 +260,9 @@ function Index() {
               moments with the soul of a poet.
             </h2>
             <p className="mb-10 max-w-[52ch] text-pretty leading-relaxed text-muted-foreground">
-              A cross-disciplinary creator. By day I architect performant
+              I'm <strong className="font-medium text-foreground">Ayanfeoluwa Alalade</strong>{" "}
+              (also written Alalade Ayanfeoluwa), a cross-disciplinary creator
+              based in Nigeria. By day I architect performant
               frontend systems with React and TypeScript. By night I explore the
               cinematic intersections of everyday life through my lens. The
               precision of one shapes the emotion of the other.

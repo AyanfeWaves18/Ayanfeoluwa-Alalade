@@ -85,6 +85,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Ayanfeoluwa Alalade" },
       {
+        name: "keywords",
+        content:
+          "Ayanfeoluwa Alalade, Alalade Ayanfeoluwa, Ayanfe Waves Visuals, Ayanfeoluwa Alalade photographer, Ayanfeoluwa Alalade front end developer, Nigerian photographer, Lagos photographer, React developer Nigeria",
+      },
+      {
+        name: "robots",
+        content:
+          "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      },
+      { name: "googlebot", content: "index, follow" },
+      { name: "bingbot", content: "index, follow" },
+      {
         property: "og:title",
         content: "Ayanfeoluwa Alalade — Photographer & Frontend Developer",
       },
@@ -94,6 +106,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Cinematic photography meets engineered interfaces. Explore the lens and the logic of one cross-disciplinary creator.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Ayanfeoluwa Alalade" },
+      { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
