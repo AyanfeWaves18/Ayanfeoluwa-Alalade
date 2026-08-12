@@ -56,6 +56,27 @@ export const Route = createFileRoute("/photography")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
+          "@type": "ImageGallery",
+          name: "Photography by Ayanfeoluwa Alalade",
+          url: "https://ayanfeoluwa-alalade.vercel.app/photography",
+          image: photos.map((photo) => ({
+            "@type": "ImageObject",
+            name: photo.title,
+            caption: photo.caption,
+            description: photo.alt,
+            genre: photo.category,
+            creator: {
+              "@type": "Person",
+              "@id": "https://ayanfeoluwa-alalade.vercel.app/#person",
+              name: "Ayanfeoluwa Alalade",
+            },
+          })),
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
             {
@@ -73,6 +94,7 @@ export const Route = createFileRoute("/photography")({
           ],
         }),
       },
+
     ],
   }),
   component: PhotographyPage,
@@ -151,7 +173,8 @@ function PhotographyPage() {
               <div className="overflow-hidden rounded-xl">
                 <img
                   src={photo.src}
-                  alt={photo.title}
+                  alt={photo.alt}
+                  title={photo.title}
                   loading="lazy"
                   className={
                     photo.span === "tall"
@@ -160,13 +183,19 @@ function PhotographyPage() {
                   }
                 />
               </div>
-              <figcaption className="mt-4 flex items-center justify-between">
-                <span className="font-serif text-lg italic">{photo.title}</span>
-                <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
-                  {photo.meta}
-                </span>
+              <figcaption className="mt-4">
+                <div className="flex items-baseline justify-between gap-4">
+                  <span className="font-serif text-lg italic">{photo.title}</span>
+                  <span className="shrink-0 text-[10px] uppercase tracking-widest text-muted-foreground">
+                    {photo.meta}
+                  </span>
+                </div>
+                <p className="mt-2 max-w-[52ch] text-pretty text-sm leading-relaxed text-muted-foreground">
+                  {photo.caption}
+                </p>
               </figcaption>
             </figure>
+
           ))}
         </div>
         <div className="mt-16 flex justify-center">

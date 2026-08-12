@@ -39,6 +39,10 @@ export type Photo = {
   title: string;
   category: "Portraits" | "Nature" | "Editorial" | "Events";
   meta: string;
+  /** Descriptive alt text for screen readers and image search. */
+  alt: string;
+  /** Human-readable caption describing the frame and intent. */
+  caption: string;
   span?: "wide" | "tall" | "normal";
 };
 
@@ -48,6 +52,9 @@ export const photos: Photo[] = [
     title: "Shrouded Gaze",
     category: "Portraits",
     meta: "Portrait",
+    alt: "Cinematic close-up portrait of a young man in a dark hood, face half lit by cool twilight light, photographed by Ayanfeoluwa Alalade",
+    caption:
+      "A hooded portrait shot in low twilight light — the hood frames the face so the eyes carry the whole story.",
     span: "wide",
   },
   {
@@ -55,6 +62,9 @@ export const photos: Photo[] = [
     title: "Lavender Poise",
     category: "Portraits",
     meta: "Portrait",
+    alt: "Full-length portrait of a woman in a flowing lavender dress standing calmly against a muted outdoor backdrop",
+    caption:
+      "A standing portrait in a flowing lavender dress, styled for soft colour harmony between fabric and evening sky.",
     span: "tall",
   },
   {
@@ -62,6 +72,9 @@ export const photos: Photo[] = [
     title: "Gathering Storm",
     category: "Nature",
     meta: "Landscape",
+    alt: "Wide landscape of an open field beneath heavy storm clouds, with dramatic dark grey light breaking over the horizon",
+    caption:
+      "An open field minutes before rain — heavy cloud layers compressed into a single dramatic horizon line.",
     span: "wide",
   },
   {
@@ -69,6 +82,9 @@ export const photos: Photo[] = [
     title: "Quiet Joy",
     category: "Portraits",
     meta: "Portrait",
+    alt: "Candid portrait of a smiling subject in warm natural light, captured mid-laugh with a soft blurred background",
+    caption:
+      "A candid frame caught mid-laugh — natural light, no posing, the expression left exactly as it happened.",
     span: "tall",
   },
   {
@@ -76,6 +92,9 @@ export const photos: Photo[] = [
     title: "Dusk Avenue",
     category: "Nature",
     meta: "Landscape",
+    alt: "Twilight scene of an avenue fading into blue-hour haze, with cool purple tones across sky and road",
+    caption:
+      "Blue hour along a quiet avenue, exposed for the sky so the road falls away into cool purple haze.",
     span: "wide",
   },
   {
@@ -83,6 +102,9 @@ export const photos: Photo[] = [
     title: "White Study",
     category: "Editorial",
     meta: "Editorial",
+    alt: "Editorial portrait of a model in a crisp white shirt against a clean neutral background, lit for texture and contrast",
+    caption:
+      "An editorial study in white — the shirt's folds and shadows do the work while the palette stays neutral.",
     span: "tall",
   },
   {
@@ -90,6 +112,9 @@ export const photos: Photo[] = [
     title: "Turned Away",
     category: "Editorial",
     meta: "Editorial",
+    alt: "Editorial portrait of a subject photographed from behind, shoulders and silhouette outlined by directional light",
+    caption:
+      "Shot from behind so silhouette replaces expression — light traces the shoulders and leaves the face to imagination.",
     span: "wide",
   },
   {
@@ -97,9 +122,13 @@ export const photos: Photo[] = [
     title: "Texture Study No. 4",
     category: "Editorial",
     meta: "Editorial",
+    alt: "Close-up editorial texture study of fabric and skin tones under raking side light",
+    caption:
+      "A close texture study — raking side light used to pull grain out of fabric and skin.",
     span: "tall",
   },
 ];
+
 
 
 export const externalLinks = {
