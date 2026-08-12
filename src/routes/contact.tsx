@@ -20,13 +20,13 @@ export const Route = createFileRoute("/contact")({
           "Let's create something worth remembering — for the lens or the screen.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://artful-engineer-spot.lovable.app/contact" },
-      { property: "og:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+      { property: "og:url", content: "https://ayanfeoluwa-alalade.vercel.app/contact" },
+      { property: "og:image", content: "https://ayanfeoluwa-alalade.vercel.app/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+      { name: "twitter:image", content: "https://ayanfeoluwa-alalade.vercel.app/og-image.png" },
     ],
     links: [
-      { rel: "canonical", href: "https://artful-engineer-spot.lovable.app/contact" },
+      { rel: "canonical", href: "https://ayanfeoluwa-alalade.vercel.app/contact" },
     ],
     scripts: [
       {
@@ -34,11 +34,11 @@ export const Route = createFileRoute("/contact")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          url: "https://artful-engineer-spot.lovable.app/contact",
+          url: "https://ayanfeoluwa-alalade.vercel.app/contact",
           name: "Contact Ayanfeoluwa Alalade",
           mainEntity: {
             "@type": "Person",
-            "@id": "https://artful-engineer-spot.lovable.app/#person",
+            "@id": "https://ayanfeoluwa-alalade.vercel.app/#person",
             name: "Ayanfeoluwa Alalade",
             alternateName: ["Alalade Ayanfeoluwa"],
             email: "mailto:ayanfeoluwaalalade2000@gmail.com",

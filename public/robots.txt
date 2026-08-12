@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://artful-engineer-spot.lovable.app/sitemap.xml
+Sitemap: https://ayanfeoluwa-alalade.vercel.app/sitemap.xml
