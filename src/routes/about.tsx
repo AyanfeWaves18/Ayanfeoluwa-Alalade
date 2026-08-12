@@ -46,7 +46,41 @@ export const Route = createFileRoute("/about")({
           },
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Who is Ayanfeoluwa Alalade?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ayanfeoluwa Alalade (also written Alalade Ayanfeoluwa) is a Nigeria-based photographer and front end developer. He shoots cinematic portrait, editorial, and landscape photography under the brand Ayanfe Waves Visuals, and builds web interfaces with HTML, CSS, JavaScript, React, and TypeScript.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What does Ayanfeoluwa Alalade do?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "He works across two crafts: photography — portraits, editorial and landscape work — and front end development, building responsive, accessible web interfaces.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How can I hire or contact Ayanfeoluwa Alalade?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "For photography, email ayanfewavesvisuals@gmail.com. For front end development work, email ayanfeoluwaalalade2000@gmail.com. He is also reachable on WhatsApp at +234 816 782 9017.",
+              },
+            },
+          ],
+        }),
+      },
     ],
+
   }),
   component: AboutPage,
 });
