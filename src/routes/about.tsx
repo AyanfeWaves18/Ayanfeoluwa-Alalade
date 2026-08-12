@@ -166,6 +166,54 @@ function AboutPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <span className="mb-8 block font-mono text-[11px] uppercase tracking-[0.4em] text-muted-foreground">
+          Frequently asked
+        </span>
+        <dl className="divide-y divide-border border-y border-border">
+          <div className="grid gap-3 py-8 md:grid-cols-3">
+            <dt className="font-serif text-xl italic">
+              Who is Ayanfeoluwa Alalade?
+            </dt>
+            <dd className="text-pretty leading-relaxed text-muted-foreground md:col-span-2">
+              Ayanfeoluwa Alalade (also written Alalade Ayanfeoluwa) is a
+              Nigeria-based photographer and front end developer. He shoots
+              cinematic portrait, editorial, and landscape photography under the
+              brand Ayanfe Waves Visuals, and builds web interfaces with HTML,
+              CSS, JavaScript, React, and TypeScript.
+            </dd>
+          </div>
+          <div className="grid gap-3 py-8 md:grid-cols-3">
+            <dt className="font-serif text-xl italic">
+              What does he do?
+            </dt>
+            <dd className="text-pretty leading-relaxed text-muted-foreground md:col-span-2">
+              Two crafts: photography — portraits, editorial and landscape work
+              — and front end development, building responsive, accessible web
+              interfaces.
+            </dd>
+          </div>
+          <div className="grid gap-3 py-8 md:grid-cols-3">
+            <dt className="font-serif text-xl italic">
+              How can I hire or contact him?
+            </dt>
+            <dd className="text-pretty leading-relaxed text-muted-foreground md:col-span-2">
+              For photography, email{" "}
+              <span className="break-all text-foreground">
+                ayanfewavesvisuals@gmail.com
+              </span>
+              . For front end development, email{" "}
+              <span className="break-all text-foreground">
+                ayanfeoluwaalalade2000@gmail.com
+              </span>
+              . He's also reachable on WhatsApp at +234 816 782 9017.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+
+
       <SiteFooter />
     </div>
   );
