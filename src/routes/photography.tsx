@@ -56,6 +56,27 @@ export const Route = createFileRoute("/photography")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
+          "@type": "ImageGallery",
+          name: "Photography by Ayanfeoluwa Alalade",
+          url: "https://ayanfeoluwa-alalade.vercel.app/photography",
+          image: photos.map((photo) => ({
+            "@type": "ImageObject",
+            name: photo.title,
+            caption: photo.caption,
+            description: photo.alt,
+            genre: photo.category,
+            creator: {
+              "@type": "Person",
+              "@id": "https://ayanfeoluwa-alalade.vercel.app/#person",
+              name: "Ayanfeoluwa Alalade",
+            },
+          })),
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
             {
@@ -73,6 +94,7 @@ export const Route = createFileRoute("/photography")({
           ],
         }),
       },
+
     ],
   }),
   component: PhotographyPage,
