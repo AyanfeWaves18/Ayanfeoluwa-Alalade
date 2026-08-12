@@ -201,20 +201,27 @@ function Index() {
               <div className="overflow-hidden rounded-xl">
                 <img
                   src={images.hoodedPortrait}
-                  alt="Shrouded Gaze — hooded cinematic portrait"
+                  alt="Cinematic close-up portrait of a young man in a dark hood, face half lit by cool twilight light, photographed by Ayanfeoluwa Alalade"
+                  title="Shrouded Gaze"
                   width={1280}
                   height={864}
                   loading="lazy"
                   className="aspect-[3/2] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               </div>
-              <figcaption className="mt-4 flex items-center justify-between">
-                <span className="font-serif text-lg italic">
-                  Shrouded Gaze
-                </span>
-                <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
-                  Portrait
-                </span>
+              <figcaption className="mt-4">
+                <div className="flex items-baseline justify-between gap-4">
+                  <span className="font-serif text-lg italic">
+                    Shrouded Gaze
+                  </span>
+                  <span className="shrink-0 text-[10px] uppercase tracking-widest text-muted-foreground">
+                    Portrait
+                  </span>
+                </div>
+                <p className="mt-2 max-w-[52ch] text-pretty text-sm leading-relaxed text-muted-foreground">
+                  A hooded portrait shot in low twilight light — the hood frames
+                  the face so the eyes carry the whole story.
+                </p>
               </figcaption>
             </figure>
 
@@ -223,7 +230,8 @@ function Index() {
                 <div className="overflow-hidden rounded-xl">
                   <img
                     src={images.lavenderDress}
-                    alt="Lavender Poise — portrait in lavender dress"
+                    alt="Full-length portrait of a woman in a flowing lavender dress standing calmly against a muted outdoor backdrop"
+                    title="Lavender Poise"
                     width={896}
                     height={1120}
                     loading="lazy"
@@ -234,8 +242,13 @@ function Index() {
                   <span className="font-serif text-lg italic">
                     Lavender Poise
                   </span>
+                  <p className="mt-2 text-pretty text-sm leading-relaxed text-muted-foreground">
+                    A standing portrait in a flowing lavender dress, styled for
+                    soft colour harmony between fabric and evening sky.
+                  </p>
                 </figcaption>
               </figure>
+
               <blockquote className="rounded-xl border border-border/60 bg-card/30 p-8">
                 <p className="font-serif text-sm italic text-muted-foreground">
                   "Photography is the art of observation. It has little to do
