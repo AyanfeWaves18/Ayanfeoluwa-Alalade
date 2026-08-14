@@ -377,7 +377,7 @@ function Index() {
               rel="noreferrer noopener"
               className="inline-flex rounded-full px-6 py-3 font-mono text-sm text-muted-foreground ring-1 ring-border transition-colors hover:text-mint"
             >
-              Front End portfolio ↗
+              Ayanfeoluwa Alalade | Frontend Developer ↗
             </a>
             <a
               href={externalLinks.generalWhatsApp}

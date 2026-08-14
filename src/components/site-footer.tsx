@@ -59,7 +59,7 @@ export function SiteFooter() {
                 rel="noreferrer noopener"
                 className="text-muted-foreground transition-colors hover:text-mint"
               >
-                Front End Development portfolio ↗
+                Ayanfeoluwa Alalade | Frontend Developer ↗
               </a>
             </div>
 
