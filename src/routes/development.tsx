@@ -106,7 +106,7 @@ function DevelopmentPage() {
             rel="noreferrer noopener"
             className="rounded-md bg-mint px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-mint-foreground transition-opacity hover:opacity-90"
           >
-            Front End portfolio ↗
+            Ayanfeoluwa Alalade | Frontend Developer ↗
           </a>
           <a
             href={externalLinks.github}

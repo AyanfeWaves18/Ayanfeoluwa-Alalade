@@ -68,7 +68,7 @@ const services = [
     items: ["Frontend builds", "Landing pages", "Design systems", "UI work"],
     email: "ayanfeoluwaalalade2000@gmail.com",
     portfolio: "https://ayanfeoluwasportfolio.vercel.app/",
-    portfolioLabel: "ayanfeoluwasportfolio.vercel.app",
+    portfolioLabel: "Ayanfeoluwa Alalade | Frontend Developer",
   },
 ];
 
