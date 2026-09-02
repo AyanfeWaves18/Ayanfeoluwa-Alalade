@@ -62,4 +62,4 @@ Allow: /
 User-agent: MistralAI-User
 Allow: /
 
-Sitemap: https://ayanfeoluwa-alalade.vercel.app/sitemap.xml
+Sitemap: https://artful-engineer-spot.lovable.app/sitemap.xml
