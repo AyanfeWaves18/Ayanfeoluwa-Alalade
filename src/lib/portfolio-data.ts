@@ -131,15 +131,17 @@ export const photos: Photo[] = [
 
 
 
+export const SITE_URL = "https://artful-engineer-spot.lovable.app";
+
 export const externalLinks = {
-  photographyPortfolio: "https://ayanfewavesvisuals.lovable.app/",
-  photographyGallery: "https://ayanfewavesvisuals.lovable.app/portfolio",
+  photographyPortfolio: "https://ayanfeoluwa-alalade.vercel.app/",
+  photographyGallery: "https://ayanfeoluwa-alalade.vercel.app/",
   photographyWhatsApp:
     "https://wa.me/2348167829017?text=Hi%20Ayanfeoluwa%2C%20I%27d%20like%20to%20book%20a%20photography%20session.",
   generalWhatsApp:
     "https://wa.me/2348167829017?text=Hi%20Ayanfeoluwa%2C%20I%27d%20like%20to%20discuss%20a%20project.",
-  devPortfolio: "https://ayanfeoluwasportfolio.vercel.app/",
-  devProjects: "https://ayanfeoluwasportfolio.vercel.app/#projects",
+  devPortfolio: "https://ayanfe-dev.vercel.app/",
+  devProjects: "https://ayanfe-dev.vercel.app/#projects",
   tiktok: "https://www.tiktok.com/@ayanfewaves_visuals1",
   github: "https://github.com/AyanfeWaves18",
   linkedin: "https://www.linkedin.com/in/ayanfeoluwa-alalade-34b759362",
