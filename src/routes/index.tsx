@@ -2,63 +2,87 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { externalLinks, images, projects, techStack } from "@/lib/portfolio-data";
+import {
+  SITE_URL,
+  externalLinks,
+  images,
+  profile,
+  projects,
+  techStack,
+} from "@/lib/portfolio-data";
 import logo from "@/assets/brand/ayanfeoluwa-alalade-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ayanfeoluwa Alalade — Photographer & Front End Developer" },
-      { name: "description", content: "Ayanfeoluwa Alalade (Alalade Ayanfeoluwa) is a Nigerian photographer and front end developer. Explore the cinematic photography of Ayanfe Waves Visuals and his front end projects." },
-      { property: "og:title", content: "Ayanfeoluwa Alalade — Photographer & Front End Developer" },
-      { property: "og:description", content: "Cinematic photography and thoughtful front-end development by Ayanfeoluwa Alalade." },
+      { title: "Ayanfeoluwa Alalade | Frontend Developer & Photographer" },
+      {
+        name: "description",
+        content:
+          "Ayanfeoluwa Alalade is a Computer Science student at Crawford University, Frontend Developer, Photographer, Photo Editor and Creative Artist.",
+      },
+      { property: "og:title", content: "Ayanfeoluwa Alalade | Frontend Developer & Photographer" },
+      {
+        property: "og:description",
+        content:
+          "The official website of Ayanfeoluwa Alalade — Frontend Developer, Photographer and Photo Editor, and the creator behind Ayanfe Waves Visuals.",
+      },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://artful-engineer-spot.lovable.app/" },
-      { property: "og:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+      { property: "og:site_name", content: "Ayanfeoluwa Alalade" },
+      { property: "og:url", content: `${SITE_URL}/` },
+      { property: "og:image", content: `${SITE_URL}/og-image.png` },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+      { name: "twitter:image", content: `${SITE_URL}/og-image.png` },
     ],
-    links: [
-      { rel: "canonical", href: "https://artful-engineer-spot.lovable.app/" },
-    ],
+    links: [{ rel: "canonical", href: `${SITE_URL}/` }],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfilePage",
-          "@id": "https://artful-engineer-spot.lovable.app/#profilepage",
-          url: "https://artful-engineer-spot.lovable.app/",
-          name: "Ayanfeoluwa Alalade — Photographer & Front End Developer",
+          "@id": `${SITE_URL}/#profilepage`,
+          url: `${SITE_URL}/`,
+          name: "Ayanfeoluwa Alalade | Frontend Developer & Photographer",
           mainEntity: {
             "@type": "Person",
-            "@id": "https://artful-engineer-spot.lovable.app/#person",
+            "@id": `${SITE_URL}/#person`,
             name: "Ayanfeoluwa Alalade",
             alternateName: [
+              "World Famous",
               "Alalade Ayanfeoluwa",
-              "Ayanfeoluwa Alalade Photography",
               "Ayanfe Waves Visuals",
-              "AyanfeWaves",
             ],
             givenName: "Ayanfeoluwa",
             familyName: "Alalade",
-            url: "https://artful-engineer-spot.lovable.app/",
-            image: "https://artful-engineer-spot.lovable.app/og-image.png",
-            jobTitle: ["Photographer", "Front End Developer"],
+            url: `${SITE_URL}/`,
+            image: `${SITE_URL}/og-image.png`,
+            jobTitle: "Frontend Developer, Photographer & Photo Editor",
             description:
-              "Ayanfeoluwa Alalade is a Nigerian photographer and front end developer working across cinematic visual storytelling and web interfaces.",
+              "Ayanfeoluwa Alalade is a Computer Science student at Crawford University, Frontend Developer, Photographer, Photo Editor and Creative Artist.",
             nationality: "Nigerian",
             address: { "@type": "PostalAddress", addressCountry: "NG" },
+            affiliation: {
+              "@type": "CollegeOrUniversity",
+              name: "Crawford University",
+            },
+            alumniOf: {
+              "@type": "CollegeOrUniversity",
+              name: "Crawford University",
+            },
+            brand: { "@type": "Brand", name: "Ayanfe Waves Visuals" },
             knowsAbout: [
-              "Photography",
-              "Portrait photography",
-              "Editorial photography",
-              "Front end development",
+              "Frontend development",
               "HTML",
               "CSS",
               "JavaScript",
               "React",
               "TypeScript",
+              "Photography",
+              "Portrait photography",
+              "Editorial photography",
+              "Photo editing",
+              "Visual storytelling",
             ],
             email: "mailto:ayanfeoluwaalalade2000@gmail.com",
             sameAs: [
@@ -76,14 +100,14 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "@id": "https://artful-engineer-spot.lovable.app/#website",
+          "@id": `${SITE_URL}/#website`,
           name: "Ayanfeoluwa Alalade",
           alternateName: ["Alalade Ayanfeoluwa", "Ayanfeoluwa Alalade Portfolio"],
-          url: "https://artful-engineer-spot.lovable.app/",
+          url: `${SITE_URL}/`,
           inLanguage: "en",
           description:
-            "The official website of Ayanfeoluwa Alalade — photographer and front end developer.",
-          publisher: { "@id": "https://artful-engineer-spot.lovable.app/#person" },
+            "The official website of Ayanfeoluwa Alalade — Frontend Developer, Photographer and Photo Editor.",
+          publisher: { "@id": `${SITE_URL}/#person` },
         }),
       },
     ],
@@ -96,9 +120,33 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
 
-      <h1 className="sr-only">
-        Ayanfeoluwa Alalade — Photographer & Front End Developer
-      </h1>
+      {/* Identity band — the strongest on-page signal for the name */}
+      <section className="border-b border-border bg-background px-6 pb-10 pt-32 md:pt-36">
+        <div className="mx-auto max-w-7xl text-center">
+          <h1 className="text-balance font-serif text-4xl font-medium leading-tight text-foreground md:text-6xl">
+            Ayanfeoluwa Alalade
+          </h1>
+          <p className="mx-auto mt-5 max-w-[62ch] text-pretty leading-relaxed text-muted-foreground">
+            Computer Science student at Crawford University — Frontend
+            Developer, Photographer, Photo Editor and Creative Artist. I build
+            web interfaces and shoot cinematic images under{" "}
+            <strong className="font-medium text-foreground">
+              Ayanfe Waves Visuals
+            </strong>
+            .
+          </p>
+          <ul className="mt-6 flex flex-wrap items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            {profile.roles.map((role) => (
+              <li
+                key={role}
+                className="rounded-full border border-border px-3 py-1.5"
+              >
+                {role}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       {/* Hero — the dual split */}
       <section className="relative flex min-h-screen flex-col border-b border-border md:flex-row">
@@ -161,6 +209,66 @@ function Index() {
         </div>
       </section>
 
+      {/* Explore My Work — gateway to the two specialized portfolios */}
+      <section
+        id="explore-my-work"
+        className="border-b border-border bg-background py-24 md:py-32"
+      >
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-balance font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
+            Explore My Work
+          </h2>
+          <p className="mt-4 max-w-[56ch] text-pretty leading-relaxed text-muted-foreground">
+            One person, two disciplines. Each has its own dedicated portfolio.
+          </p>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <article className="flex flex-col rounded-xl border border-border bg-terminal p-8">
+              <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-mint">
+                Frontend Development
+              </span>
+              <h3 className="mt-4 font-mono text-2xl tracking-tighter text-foreground">
+                Frontend Development
+              </h3>
+              <p className="mt-3 flex-1 text-pretty leading-relaxed text-muted-foreground">
+                Explore my frontend development projects, technical skills, and
+                web development work.
+              </p>
+              <a
+                href={externalLinks.devPortfolio}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-8 inline-flex w-fit rounded-full bg-mint px-6 py-3 font-mono text-sm text-mint-foreground transition-opacity hover:opacity-90"
+              >
+                View Frontend Portfolio ↗
+              </a>
+            </article>
+
+            <article className="flex flex-col rounded-xl border border-border bg-twilight p-8">
+              <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-dusk">
+                Ayanfe Waves Visuals
+              </span>
+              <h3 className="mt-4 font-serif text-2xl italic text-foreground">
+                Photography
+              </h3>
+              <p className="mt-3 flex-1 text-pretty leading-relaxed text-muted-foreground">
+                Explore my photography, photo editing, and visual storytelling
+                work.
+              </p>
+              <a
+                href={externalLinks.photographyPortfolio}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-8 inline-flex w-fit rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-dusk hover:text-dusk-foreground"
+              >
+                View Photography Portfolio ↗
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
       {/* Photography world (warm) */}
       <section className="bg-twilight py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
@@ -186,7 +294,7 @@ function Index() {
                 View all works →
               </Link>
               <a
-                href="https://ayanfewavesvisuals.lovable.app/"
+                href={externalLinks.photographyPortfolio}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-dusk"
@@ -372,7 +480,7 @@ function Index() {
               Explore all projects
             </Link>
             <a
-              href="https://ayanfeoluwasportfolio.vercel.app/"
+              href={externalLinks.devPortfolio}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex rounded-full px-6 py-3 font-mono text-sm text-muted-foreground ring-1 ring-border transition-colors hover:text-mint"

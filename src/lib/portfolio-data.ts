@@ -131,21 +131,108 @@ export const photos: Photo[] = [
 
 
 
-export const SITE_URL = "https://artful-engineer-spot.lovable.app";
+/** Canonical URL of THIS site — the main personal portfolio hub. */
+export const SITE_URL = "https://ayanfeoluwa-alalade.vercel.app";
 
 export const externalLinks = {
-  photographyPortfolio: "https://ayanfeoluwa-alalade.vercel.app/",
-  photographyGallery: "https://ayanfeoluwa-alalade.vercel.app/",
+  /** This site — the combined main portfolio. */
+  mainPortfolio: "https://ayanfeoluwa-alalade.vercel.app/",
+  /** Ayanfe Waves Visuals — the specialized photography portfolio. */
+  photographyPortfolio: "https://ayanfewavesvisuals.lovable.app/",
+  photographyGallery: "https://ayanfewavesvisuals.lovable.app/",
   photographyWhatsApp:
     "https://wa.me/2348167829017?text=Hi%20Ayanfeoluwa%2C%20I%27d%20like%20to%20book%20a%20photography%20session.",
   generalWhatsApp:
     "https://wa.me/2348167829017?text=Hi%20Ayanfeoluwa%2C%20I%27d%20like%20to%20discuss%20a%20project.",
+  /** The specialized front end development portfolio. */
   devPortfolio: "https://ayanfe-dev.vercel.app/",
   devProjects: "https://ayanfe-dev.vercel.app/#projects",
   tiktok: "https://www.tiktok.com/@ayanfewaves_visuals1",
   github: "https://github.com/AyanfeWaves18",
   linkedin: "https://www.linkedin.com/in/ayanfeoluwa-alalade-34b759362",
 } as const;
+
+export const profile = {
+  name: "Ayanfeoluwa Alalade",
+  alternateName: "World Famous",
+  nameVariants: ["Alalade Ayanfeoluwa", "World Famous"],
+  jobTitle: "Frontend Developer, Photographer & Photo Editor",
+  roles: [
+    "Frontend Developer",
+    "Photographer",
+    "Photo Editor",
+    "Creative Artist",
+    "Computer Science Student, Crawford University",
+  ],
+  university: "Crawford University",
+  brand: "Ayanfe Waves Visuals",
+  emails: {
+    photography: "ayanfewavesvisuals@gmail.com",
+    development: "ayanfeoluwaalalade2000@gmail.com",
+  },
+  whatsapp: "+234 816 782 9017",
+} as const;
+
+export const leadership = [
+  {
+    role: "Welfare Director",
+    org: "SRC, Crawford University Chapter",
+    period: "26/27 Session",
+    body: "Serving students in a welfare-focused role within the Students' Representative Council at Crawford University.",
+  },
+  {
+    role: "Cowrywise Campus Lead",
+    org: "Crawford University",
+    period: "",
+    body: "Representing Cowrywise on campus, sharing financial-literacy and saving habits with fellow students.",
+  },
+] as const;
+
+export const experience = [
+  {
+    title: "Frontend Development",
+    body: "Building responsive, accessible web interfaces with HTML, CSS and JavaScript, working with React and TypeScript. Deployed projects include Teal & Gold Mini Store and a Nike rebrand concept.",
+  },
+  {
+    title: "Photography",
+    body: "Shooting portrait, editorial and landscape work under the Ayanfe Waves Visuals brand, with a cinematic, twilight-leaning approach to light and composition.",
+  },
+  {
+    title: "Photo Editing",
+    body: "Handling the full post-production pass on my own frames — colour, tone and retouching — to keep a consistent visual signature across a body of work.",
+  },
+  {
+    title: "Practical Development Experience",
+    body: "Applying frontend skills to real, published projects end to end: build, refine, deploy and iterate.",
+  },
+  {
+    title: "Leadership",
+    body: "Welfare Director for the SRC, Crawford University Chapter (26/27 session), alongside my studies in Computer Science.",
+  },
+  {
+    title: "Cowrywise Campus Lead",
+    body: "Campus lead for Cowrywise at Crawford University, running awareness and engagement around saving and investing.",
+  },
+] as const;
+
+export const creativeWork = [
+  {
+    title: "Photography",
+    body: "Portraits, editorial frames and landscapes where light does the storytelling.",
+  },
+  {
+    title: "Photo Editing",
+    body: "Colour grading and retouching that carry one consistent mood across a set.",
+  },
+  {
+    title: "Visual Storytelling",
+    body: "Sequencing images so a gallery reads like a narrative, not a grid.",
+  },
+  {
+    title: "Creative Projects",
+    body: "Self-directed work — like the Nike rebrand concept — where design ideas and code meet.",
+  },
+] as const;
 
 export const photoCategories = [
   "All",
