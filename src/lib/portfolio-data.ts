@@ -131,7 +131,7 @@ export const photos: Photo[] = [
 
 
 
-export const SITE_URL = "https://artful-engineer-spot.lovable.app";
+export const SITE_URL = "https://ayanfeoluwa-alalade.vercel.app";
 
 export const externalLinks = {
   photographyPortfolio: "https://ayanfeoluwa-alalade.vercel.app/",

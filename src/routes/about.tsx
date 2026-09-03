@@ -20,13 +20,13 @@ export const Route = createFileRoute("/about")({
           "One creator, two crafts: the story bridging photography and front end development.",
       },
       { property: "og:type", content: "profile" },
-      { property: "og:url", content: "https://artful-engineer-spot.lovable.app/about" },
-      { property: "og:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+      { property: "og:url", content: "https://ayanfeoluwa-alalade.vercel.app/about" },
+      { property: "og:image", content: "https://ayanfeoluwa-alalade.vercel.app/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://artful-engineer-spot.lovable.app/og-image.png" },
+      { name: "twitter:image", content: "https://ayanfeoluwa-alalade.vercel.app/og-image.png" },
     ],
     links: [
-      { rel: "canonical", href: "https://artful-engineer-spot.lovable.app/about" },
+      { rel: "canonical", href: "https://ayanfeoluwa-alalade.vercel.app/about" },
     ],
     scripts: [
       {
@@ -34,15 +34,15 @@ export const Route = createFileRoute("/about")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "AboutPage",
-          url: "https://artful-engineer-spot.lovable.app/about",
+          url: "https://ayanfeoluwa-alalade.vercel.app/about",
           name: "About Ayanfeoluwa Alalade",
           mainEntity: {
             "@type": "Person",
-            "@id": "https://artful-engineer-spot.lovable.app/#person",
+            "@id": "https://ayanfeoluwa-alalade.vercel.app/#person",
             name: "Ayanfeoluwa Alalade",
             alternateName: ["Alalade Ayanfeoluwa", "Ayanfe Waves Visuals"],
             jobTitle: ["Photographer", "Front End Developer"],
-            url: "https://artful-engineer-spot.lovable.app/",
+            url: "https://ayanfeoluwa-alalade.vercel.app/",
           },
         }),
       },

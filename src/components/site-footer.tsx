@@ -54,7 +54,7 @@ export function SiteFooter() {
                 Photography portfolio ↗
               </a>
               <a
-                href="https://ayanfeoluwasportfolio.vercel.app/"
+                href="https://ayanfe-dev.vercel.app/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="text-muted-foreground transition-colors hover:text-mint"
