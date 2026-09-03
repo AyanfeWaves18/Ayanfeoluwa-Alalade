@@ -113,9 +113,33 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
 
-      <h1 className="sr-only">
-        Ayanfeoluwa Alalade — Photographer & Front End Developer
-      </h1>
+      {/* Identity band — the strongest on-page signal for the name */}
+      <section className="border-b border-border bg-background px-6 pb-10 pt-32 md:pt-36">
+        <div className="mx-auto max-w-7xl text-center">
+          <h1 className="text-balance font-serif text-4xl font-medium leading-tight text-foreground md:text-6xl">
+            Ayanfeoluwa Alalade
+          </h1>
+          <p className="mx-auto mt-5 max-w-[62ch] text-pretty leading-relaxed text-muted-foreground">
+            Computer Science student at Crawford University — Frontend
+            Developer, Photographer, Photo Editor and Creative Artist. I build
+            web interfaces and shoot cinematic images under{" "}
+            <strong className="font-medium text-foreground">
+              Ayanfe Waves Visuals
+            </strong>
+            .
+          </p>
+          <ul className="mt-6 flex flex-wrap items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            {profile.roles.map((role) => (
+              <li
+                key={role}
+                className="rounded-full border border-border px-3 py-1.5"
+              >
+                {role}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       {/* Hero — the dual split */}
       <section className="relative flex min-h-screen flex-col border-b border-border md:flex-row">
