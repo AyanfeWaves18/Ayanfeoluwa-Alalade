@@ -2,7 +2,14 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { externalLinks, images, projects, techStack } from "@/lib/portfolio-data";
+import {
+  SITE_URL,
+  externalLinks,
+  images,
+  profile,
+  projects,
+  techStack,
+} from "@/lib/portfolio-data";
 import logo from "@/assets/brand/ayanfeoluwa-alalade-logo.png";
 
 export const Route = createFileRoute("/")({
