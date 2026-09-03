@@ -209,6 +209,66 @@ function Index() {
         </div>
       </section>
 
+      {/* Explore My Work — gateway to the two specialized portfolios */}
+      <section
+        id="explore-my-work"
+        className="border-b border-border bg-background py-24 md:py-32"
+      >
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-balance font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
+            Explore My Work
+          </h2>
+          <p className="mt-4 max-w-[56ch] text-pretty leading-relaxed text-muted-foreground">
+            One person, two disciplines. Each has its own dedicated portfolio.
+          </p>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <article className="flex flex-col rounded-xl border border-border bg-terminal p-8">
+              <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-mint">
+                Frontend Development
+              </span>
+              <h3 className="mt-4 font-mono text-2xl tracking-tighter text-foreground">
+                Frontend Development
+              </h3>
+              <p className="mt-3 flex-1 text-pretty leading-relaxed text-muted-foreground">
+                Explore my frontend development projects, technical skills, and
+                web development work.
+              </p>
+              <a
+                href={externalLinks.devPortfolio}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-8 inline-flex w-fit rounded-full bg-mint px-6 py-3 font-mono text-sm text-mint-foreground transition-opacity hover:opacity-90"
+              >
+                View Frontend Portfolio ↗
+              </a>
+            </article>
+
+            <article className="flex flex-col rounded-xl border border-border bg-twilight p-8">
+              <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-dusk">
+                Ayanfe Waves Visuals
+              </span>
+              <h3 className="mt-4 font-serif text-2xl italic text-foreground">
+                Photography
+              </h3>
+              <p className="mt-3 flex-1 text-pretty leading-relaxed text-muted-foreground">
+                Explore my photography, photo editing, and visual storytelling
+                work.
+              </p>
+              <a
+                href={externalLinks.photographyPortfolio}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-8 inline-flex w-fit rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-dusk hover:text-dusk-foreground"
+              >
+                View Photography Portfolio ↗
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
       {/* Photography world (warm) */}
       <section className="bg-twilight py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
