@@ -46,7 +46,7 @@ export function SiteFooter() {
 
             <div className="flex flex-col gap-2 text-sm md:items-end">
               <a
-                href="https://ayanfewavesvisuals.lovable.app/"
+                href={externalLinks.photographyPortfolio}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="text-muted-foreground transition-colors hover:text-dusk"
@@ -54,7 +54,7 @@ export function SiteFooter() {
                 Photography portfolio ↗
               </a>
               <a
-                href="https://ayanfe-dev.vercel.app/"
+                href={externalLinks.devPortfolio}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="text-muted-foreground transition-colors hover:text-mint"

@@ -294,7 +294,7 @@ function Index() {
                 View all works →
               </Link>
               <a
-                href="https://ayanfewavesvisuals.lovable.app/"
+                href={externalLinks.photographyPortfolio}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-dusk"
@@ -480,7 +480,7 @@ function Index() {
               Explore all projects
             </Link>
             <a
-              href="https://ayanfe-dev.vercel.app/"
+              href={externalLinks.devPortfolio}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex rounded-full px-6 py-3 font-mono text-sm text-muted-foreground ring-1 ring-border transition-colors hover:text-mint"
