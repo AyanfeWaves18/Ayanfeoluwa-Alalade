@@ -243,7 +243,7 @@ function DevelopmentPage() {
             rel="noreferrer noopener"
             className="font-mono text-sm text-muted-foreground transition-colors hover:text-mint"
           >
-            See all projects on ayanfeoluwasportfolio.vercel.app →
+            See all projects on ayanfe-dev.vercel.app →
           </a>
         </div>
       </section>
