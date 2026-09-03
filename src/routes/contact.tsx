@@ -58,8 +58,8 @@ const services = [
     label: "Photography",
     items: ["Portraits", "Events", "Editorial", "Landscapes"],
     email: "ayanfewavesvisuals@gmail.com",
-    portfolio: "https://ayanfewavesvisuals.lovable.app/",
-    portfolioLabel: "ayanfewavesvisuals.lovable.app",
+    portfolio: externalLinks.photographyPortfolio,
+    portfolioLabel: "Ayanfe Waves Visuals — photography portfolio",
   },
   {
     tone: "mint" as const,
@@ -67,8 +67,8 @@ const services = [
     label: "Front End Development",
     items: ["Frontend builds", "Landing pages", "Design systems", "UI work"],
     email: "ayanfeoluwaalalade2000@gmail.com",
-    portfolio: "https://ayanfe-dev.vercel.app/",
-    portfolioLabel: "Ayanfeoluwa Alalade | Frontend Developer",
+    portfolio: externalLinks.devPortfolio,
+    portfolioLabel: "Ayanfeoluwa Alalade | Frontend Developer portfolio",
   },
 ];
 
