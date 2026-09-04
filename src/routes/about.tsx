@@ -15,11 +15,11 @@ import {
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Ayanfeoluwa Alalade | Frontend Developer & Photographer" },
+      { title: "About Ayanfeoluwa Alalade | Developer & Photographer" },
       {
         name: "description",
         content:
-          "About Ayanfeoluwa Alalade — Computer Science student at Crawford University, Frontend Developer, Photographer, Photo Editor and Creative Artist behind Ayanfe Waves Visuals.",
+          "Ayanfeoluwa Alalade: Computer Science student at Crawford University, frontend developer, photographer and photo editor behind Ayanfe Waves Visuals.",
       },
       { property: "og:title", content: "About Ayanfeoluwa Alalade" },
       {
