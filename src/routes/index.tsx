@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Ayanfeoluwa Alalade is a Computer Science student at Crawford University, Frontend Developer, Photographer, Photo Editor and Creative Artist.",
+          "Frontend developer, photographer and photo editor. Ayanfeoluwa Alalade builds web interfaces and shoots cinematic portraits as Ayanfe Waves Visuals.",
       },
       { property: "og:title", content: "Ayanfeoluwa Alalade | Frontend Developer & Photographer" },
       {

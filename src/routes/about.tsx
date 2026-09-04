@@ -15,11 +15,11 @@ import {
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Ayanfeoluwa Alalade | Frontend Developer & Photographer" },
+      { title: "About Ayanfeoluwa Alalade | Developer & Photographer" },
       {
         name: "description",
         content:
-          "About Ayanfeoluwa Alalade — Computer Science student at Crawford University, Frontend Developer, Photographer, Photo Editor and Creative Artist behind Ayanfe Waves Visuals.",
+          "Ayanfeoluwa Alalade: Computer Science student at Crawford University, frontend developer, photographer and photo editor behind Ayanfe Waves Visuals.",
       },
       { property: "og:title", content: "About Ayanfeoluwa Alalade" },
       {
@@ -141,6 +141,9 @@ function AboutPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
+        <h2 className="mb-12 font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
+          The Story
+        </h2>
         <div className="grid items-start gap-16 md:grid-cols-2">
           <div className="relative">
             <img
