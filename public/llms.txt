@@ -1,13 +1,15 @@
 # Ayanfeoluwa Alalade
 
-> Ayanfeoluwa Alalade (also written Alalade Ayanfeoluwa) is a Nigerian photographer and front end developer. He shoots cinematic portrait, editorial, and landscape photography under the brand Ayanfe Waves Visuals, and builds web interfaces with HTML, CSS, JavaScript, React, and TypeScript.
+> Ayanfeoluwa Alalade (also written Alalade Ayanfeoluwa, known as World Famous) is a Computer Science student at Crawford University, Nigeria, and a Frontend Developer, Photographer, Photo Editor and Creative Artist. He shoots cinematic portrait, editorial, and landscape photography under the brand Ayanfe Waves Visuals, and builds web interfaces with HTML, CSS, JavaScript, React, and TypeScript.
 
 Canonical site: https://ayanfeoluwa-alalade.vercel.app/
 
 ## Identity
 - Full name: Ayanfeoluwa Alalade
-- Name variants: Alalade Ayanfeoluwa, Ayanfe Waves Visuals, AyanfeWaves
-- Roles: Photographer; Front End Developer
+- Name variants: Alalade Ayanfeoluwa, World Famous, Ayanfe Waves Visuals, AyanfeWaves
+- Roles: Frontend Developer; Photographer; Photo Editor; Creative Artist
+- Education: Computer Science student, Crawford University
+- Leadership: Welfare Director, SRC Crawford University Chapter (26/27 session); Cowrywise Campus Lead, Crawford University
 - Based in: Nigeria
 - Photography email: ayanfewavesvisuals@gmail.com
 - Development email: ayanfeoluwaalalade2000@gmail.com
