@@ -2,47 +2,69 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { images } from "@/lib/portfolio-data";
+import {
+  SITE_URL,
+  creativeWork,
+  experience,
+  externalLinks,
+  images,
+  leadership,
+  profile,
+} from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Ayanfeoluwa Alalade — Photographer & Front End Developer" },
+      { title: "About Ayanfeoluwa Alalade | Frontend Developer & Photographer" },
       {
         name: "description",
         content:
-          "The story of Ayanfeoluwa Alalade (Alalade Ayanfeoluwa) — a Nigeria-based photographer and front end developer working at the intersection of cinematic emotion and engineered precision.",
+          "About Ayanfeoluwa Alalade — Computer Science student at Crawford University, Frontend Developer, Photographer, Photo Editor and Creative Artist behind Ayanfe Waves Visuals.",
       },
       { property: "og:title", content: "About Ayanfeoluwa Alalade" },
       {
         property: "og:description",
         content:
-          "One creator, two crafts: the story bridging photography and front end development.",
+          "One person, several crafts: frontend development, photography, photo editing and creative work — plus leadership at Crawford University.",
       },
       { property: "og:type", content: "profile" },
-      { property: "og:url", content: "https://ayanfeoluwa-alalade.vercel.app/about" },
-      { property: "og:image", content: "https://ayanfeoluwa-alalade.vercel.app/og-image.png" },
+      { property: "og:url", content: `${SITE_URL}/about` },
+      { property: "og:image", content: `${SITE_URL}/og-image.png` },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://ayanfeoluwa-alalade.vercel.app/og-image.png" },
+      { name: "twitter:image", content: `${SITE_URL}/og-image.png` },
     ],
-    links: [
-      { rel: "canonical", href: "https://ayanfeoluwa-alalade.vercel.app/about" },
-    ],
+    links: [{ rel: "canonical", href: `${SITE_URL}/about` }],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "AboutPage",
-          url: "https://ayanfeoluwa-alalade.vercel.app/about",
+          url: `${SITE_URL}/about`,
           name: "About Ayanfeoluwa Alalade",
           mainEntity: {
             "@type": "Person",
-            "@id": "https://ayanfeoluwa-alalade.vercel.app/#person",
+            "@id": `${SITE_URL}/#person`,
             name: "Ayanfeoluwa Alalade",
-            alternateName: ["Alalade Ayanfeoluwa", "Ayanfe Waves Visuals"],
-            jobTitle: ["Photographer", "Front End Developer"],
-            url: "https://ayanfeoluwa-alalade.vercel.app/",
+            alternateName: ["World Famous", "Alalade Ayanfeoluwa"],
+            jobTitle: "Frontend Developer, Photographer & Photo Editor",
+            url: `${SITE_URL}/`,
+            affiliation: {
+              "@type": "CollegeOrUniversity",
+              name: "Crawford University",
+            },
+            alumniOf: {
+              "@type": "CollegeOrUniversity",
+              name: "Crawford University",
+            },
+            brand: { "@type": "Brand", name: "Ayanfe Waves Visuals" },
+            sameAs: [
+              externalLinks.photographyPortfolio,
+              externalLinks.devPortfolio,
+              externalLinks.tiktok,
+              externalLinks.github,
+              externalLinks.linkedin,
+            ],
           },
         }),
       },
@@ -57,7 +79,7 @@ export const Route = createFileRoute("/about")({
               name: "Who is Ayanfeoluwa Alalade?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Ayanfeoluwa Alalade (also written Alalade Ayanfeoluwa) is a Nigeria-based photographer and front end developer. He shoots cinematic portrait, editorial, and landscape photography under the brand Ayanfe Waves Visuals, and builds web interfaces with HTML, CSS, JavaScript, React, and TypeScript.",
+                text: "Ayanfeoluwa Alalade (also written Alalade Ayanfeoluwa, and known as World Famous) is a Computer Science student at Crawford University, a Frontend Developer, Photographer, Photo Editor and Creative Artist. He shoots under the brand Ayanfe Waves Visuals.",
               },
             },
             {
@@ -65,7 +87,23 @@ export const Route = createFileRoute("/about")({
               name: "What does Ayanfeoluwa Alalade do?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "He works across two crafts: photography — portraits, editorial and landscape work — and front end development, building responsive, accessible web interfaces.",
+                text: "He builds responsive, accessible web interfaces with HTML, CSS, JavaScript, React and TypeScript, and shoots and edits portrait, editorial and landscape photography. He also serves as Welfare Director of the SRC, Crawford University Chapter and as Cowrywise Campus Lead at Crawford University.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is Ayanfeoluwa Alalade a frontend developer?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Ayanfeoluwa Alalade is a frontend developer working with HTML, CSS, JavaScript, React and TypeScript. His dedicated frontend portfolio is at https://ayanfe-dev.vercel.app/.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is Ayanfeoluwa Alalade a photographer?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. He is a photographer and photo editor working under the brand Ayanfe Waves Visuals, with a specialized photography portfolio at https://ayanfewavesvisuals.lovable.app/.",
               },
             },
             {
@@ -73,14 +111,13 @@ export const Route = createFileRoute("/about")({
               name: "How can I hire or contact Ayanfeoluwa Alalade?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "For photography, email ayanfewavesvisuals@gmail.com. For front end development work, email ayanfeoluwaalalade2000@gmail.com. He is also reachable on WhatsApp at +234 816 782 9017.",
+                text: "For photography, email ayanfewavesvisuals@gmail.com. For frontend development work, email ayanfeoluwaalalade2000@gmail.com. He is also reachable on WhatsApp at +234 816 782 9017.",
               },
             },
           ],
         }),
       },
     ],
-
   }),
   component: AboutPage,
 });
@@ -92,11 +129,15 @@ function AboutPage() {
 
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-36 md:pt-44">
         <span className="mb-5 block font-mono text-[11px] uppercase tracking-[0.4em] text-muted-foreground">
-          Synthesis
+          About
         </span>
         <h1 className="max-w-4xl text-balance font-serif text-4xl font-medium italic leading-tight text-foreground md:text-6xl">
-          Two perspectives, one vision.
+          About Ayanfeoluwa Alalade
         </h1>
+        <p className="mt-6 max-w-[62ch] text-pretty leading-relaxed text-muted-foreground">
+          {profile.jobTitle} — and a Computer Science student at{" "}
+          {profile.university}.
+        </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
@@ -116,23 +157,36 @@ function AboutPage() {
 
           <div className="space-y-6 text-pretty leading-relaxed text-muted-foreground">
             <p>
-              I'm Ayanfeoluwa, a cross-disciplinary creator based in Nigeria. My
-              work lives in two worlds that quietly inform one another — the
-              cinematic stillness of photography and the kinetic craft of
-              frontend development.
+              I'm{" "}
+              <strong className="font-medium text-foreground">
+                Ayanfeoluwa Alalade
+              </strong>{" "}
+              — also written Alalade Ayanfeoluwa, and known to friends as World
+              Famous. I'm a Computer Science student at Crawford University, a
+              frontend developer, a photographer, a photo editor and a creative
+              artist.
             </p>
             <p>
-              My journey into tech began in the classroom, from a first exposure
-              to code that revealed how logic and creativity could build real,
-              tangible things. In parallel, the camera taught me to see — light,
-              emotion, timing, and the way a single frame can hold a whole story.
+              On the technical side I build responsive, accessible web
+              interfaces with HTML, CSS and JavaScript, working with React and
+              TypeScript. On the visual side I shoot and edit portrait,
+              editorial and landscape photography under my brand{" "}
+              <strong className="font-medium text-foreground">
+                Ayanfe Waves Visuals
+              </strong>
+              .
             </p>
             <p>
-              The technical precision of development informs the composition of
-              my photography, while the cinematic soul of my visual work brings
-              warmth to the interfaces I build. Whether I'm adjusting shutter
-              speed for a twilight landscape or refining an interaction until it
-              feels effortless, the goal is the same:{" "}
+              Outside of coursework and client work, I serve as{" "}
+              <span className="text-foreground">Welfare Director</span> for the
+              SRC, Crawford University Chapter, and as{" "}
+              <span className="text-foreground">Cowrywise Campus Lead</span> at
+              Crawford University.
+            </p>
+            <p>
+              The technical precision of development informs how I compose a
+              frame, while the cinematic instinct of my photography brings
+              warmth to the interfaces I build. Different tools, same goal:{" "}
               <span className="font-medium text-foreground">
                 clarity, intention, and resonance.
               </span>
@@ -166,31 +220,159 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-24">
-        <span className="mb-8 block font-mono text-[11px] uppercase tracking-[0.4em] text-muted-foreground">
+      {/* Leadership & Achievements */}
+      <section
+        id="leadership"
+        className="border-t border-border bg-background py-24"
+      >
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
+            Leadership &amp; Achievements
+          </h2>
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {leadership.map((item) => (
+              <article
+                key={item.role}
+                className="rounded-xl border border-border bg-card/20 p-8"
+              >
+                <h3 className="font-medium text-foreground">{item.role}</h3>
+                <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+                  {item.org}
+                  {item.period ? ` · ${item.period}` : ""}
+                </p>
+                <p className="mt-4 text-pretty text-sm leading-relaxed text-muted-foreground">
+                  {item.body}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Experience */}
+      <section
+        id="experience"
+        className="border-t border-border bg-background py-24"
+      >
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
+            Experience
+          </h2>
+          <dl className="mt-12 divide-y divide-border border-y border-border">
+            {experience.map((item) => (
+              <div key={item.title} className="grid gap-3 py-8 md:grid-cols-3">
+                <dt className="font-medium text-foreground">{item.title}</dt>
+                <dd className="text-pretty leading-relaxed text-muted-foreground md:col-span-2">
+                  {item.body}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      {/* Creative Work */}
+      <section
+        id="creative-work"
+        className="border-t border-border bg-twilight py-24"
+      >
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
+            Creative Work
+          </h2>
+          <p className="mt-4 max-w-[60ch] text-pretty leading-relaxed text-muted-foreground">
+            My creative practice and my technical work feed each other: framing,
+            colour and rhythm from photography shape the interfaces I build, and
+            the discipline of code keeps my visual work consistent.
+          </p>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {creativeWork.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-xl border border-border bg-card/20 p-8"
+              >
+                <h3 className="font-serif text-xl italic text-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-pretty text-sm leading-relaxed text-muted-foreground">
+                  {item.body}
+                </p>
+              </article>
+            ))}
+          </div>
+          <a
+            href={externalLinks.photographyPortfolio}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="mt-10 inline-flex rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-dusk hover:text-dusk-foreground"
+          >
+            See the Ayanfe Waves Visuals photography portfolio ↗
+          </a>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="mx-auto max-w-6xl px-6 py-24">
+        <h2 className="mb-8 font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
           Frequently asked
-        </span>
+        </h2>
         <dl className="divide-y divide-border border-y border-border">
           <div className="grid gap-3 py-8 md:grid-cols-3">
             <dt className="font-serif text-xl italic">
               Who is Ayanfeoluwa Alalade?
             </dt>
             <dd className="text-pretty leading-relaxed text-muted-foreground md:col-span-2">
-              Ayanfeoluwa Alalade (also written Alalade Ayanfeoluwa) is a
-              Nigeria-based photographer and front end developer. He shoots
-              cinematic portrait, editorial, and landscape photography under the
-              brand Ayanfe Waves Visuals, and builds web interfaces with HTML,
-              CSS, JavaScript, React, and TypeScript.
+              Ayanfeoluwa Alalade (also written Alalade Ayanfeoluwa, known as
+              World Famous) is a Computer Science student at Crawford
+              University, a Frontend Developer, Photographer, Photo Editor and
+              Creative Artist. He shoots under the brand Ayanfe Waves Visuals.
             </dd>
           </div>
           <div className="grid gap-3 py-8 md:grid-cols-3">
             <dt className="font-serif text-xl italic">
-              What does he do?
+              What does Ayanfeoluwa Alalade do?
             </dt>
             <dd className="text-pretty leading-relaxed text-muted-foreground md:col-span-2">
-              Two crafts: photography — portraits, editorial and landscape work
-              — and front end development, building responsive, accessible web
-              interfaces.
+              He builds responsive, accessible web interfaces with HTML, CSS,
+              JavaScript, React and TypeScript, and shoots and edits portrait,
+              editorial and landscape photography. He also serves as Welfare
+              Director of the SRC, Crawford University Chapter and as Cowrywise
+              Campus Lead at Crawford University.
+            </dd>
+          </div>
+          <div className="grid gap-3 py-8 md:grid-cols-3">
+            <dt className="font-serif text-xl italic">
+              Is Ayanfeoluwa Alalade a frontend developer?
+            </dt>
+            <dd className="text-pretty leading-relaxed text-muted-foreground md:col-span-2">
+              Yes — he works with HTML, CSS, JavaScript, React and TypeScript.
+              His dedicated{" "}
+              <a
+                href={externalLinks.devPortfolio}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-foreground underline decoration-mint/50 underline-offset-4 hover:text-mint"
+              >
+                frontend development portfolio
+              </a>{" "}
+              covers those projects in depth.
+            </dd>
+          </div>
+          <div className="grid gap-3 py-8 md:grid-cols-3">
+            <dt className="font-serif text-xl italic">
+              Is Ayanfeoluwa Alalade a photographer?
+            </dt>
+            <dd className="text-pretty leading-relaxed text-muted-foreground md:col-span-2">
+              Yes — he is a photographer and photo editor working as{" "}
+              <a
+                href={externalLinks.photographyPortfolio}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-foreground underline decoration-dusk/50 underline-offset-4 hover:text-dusk"
+              >
+                Ayanfe Waves Visuals
+              </a>
+              .
             </dd>
           </div>
           <div className="grid gap-3 py-8 md:grid-cols-3">
@@ -200,19 +382,17 @@ function AboutPage() {
             <dd className="text-pretty leading-relaxed text-muted-foreground md:col-span-2">
               For photography, email{" "}
               <span className="break-all text-foreground">
-                ayanfewavesvisuals@gmail.com
+                {profile.emails.photography}
               </span>
-              . For front end development, email{" "}
+              . For frontend development, email{" "}
               <span className="break-all text-foreground">
-                ayanfeoluwaalalade2000@gmail.com
+                {profile.emails.development}
               </span>
-              . He's also reachable on WhatsApp at +234 816 782 9017.
+              . He's also reachable on WhatsApp at {profile.whatsapp}.
             </dd>
           </div>
         </dl>
       </section>
-
-
 
       <SiteFooter />
     </div>
