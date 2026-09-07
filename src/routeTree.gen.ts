@@ -13,6 +13,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as PhotographyRouteImport } from './routes/photography'
 import { Route as DevelopmentRouteImport } from './routes/development'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AyanfeoluwaAlaladeRouteImport } from './routes/ayanfeoluwa-alalade'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -36,6 +37,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AyanfeoluwaAlaladeRoute = AyanfeoluwaAlaladeRouteImport.update({
+  id: '/ayanfeoluwa-alalade',
+  path: '/ayanfeoluwa-alalade',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -50,6 +56,7 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/ayanfeoluwa-alalade': typeof AyanfeoluwaAlaladeRoute
   '/contact': typeof ContactRoute
   '/development': typeof DevelopmentRoute
   '/photography': typeof PhotographyRoute
@@ -58,6 +65,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/ayanfeoluwa-alalade': typeof AyanfeoluwaAlaladeRoute
   '/contact': typeof ContactRoute
   '/development': typeof DevelopmentRoute
   '/photography': typeof PhotographyRoute
@@ -67,6 +75,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/ayanfeoluwa-alalade': typeof AyanfeoluwaAlaladeRoute
   '/contact': typeof ContactRoute
   '/development': typeof DevelopmentRoute
   '/photography': typeof PhotographyRoute
@@ -77,6 +86,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/ayanfeoluwa-alalade'
     | '/contact'
     | '/development'
     | '/photography'
@@ -85,6 +95,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/ayanfeoluwa-alalade'
     | '/contact'
     | '/development'
     | '/photography'
@@ -93,6 +104,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/ayanfeoluwa-alalade'
     | '/contact'
     | '/development'
     | '/photography'
@@ -102,6 +114,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AyanfeoluwaAlaladeRoute: typeof AyanfeoluwaAlaladeRoute
   ContactRoute: typeof ContactRoute
   DevelopmentRoute: typeof DevelopmentRoute
   PhotographyRoute: typeof PhotographyRoute
@@ -138,6 +151,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ayanfeoluwa-alalade': {
+      id: '/ayanfeoluwa-alalade'
+      path: '/ayanfeoluwa-alalade'
+      fullPath: '/ayanfeoluwa-alalade'
+      preLoaderRoute: typeof AyanfeoluwaAlaladeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -158,6 +178,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AyanfeoluwaAlaladeRoute: AyanfeoluwaAlaladeRoute,
   ContactRoute: ContactRoute,
   DevelopmentRoute: DevelopmentRoute,
   PhotographyRoute: PhotographyRoute,
