@@ -200,7 +200,7 @@ function Index() {
           <div className="size-24 overflow-hidden rounded-full border border-border bg-background shadow-lift">
             <img
               src={logo}
-              alt="Ayanfeoluwa Alalade logo"
+              alt="Ayanfeoluwa Alalade brand mark"
               width={96}
               height={96}
               className="size-full object-cover"
