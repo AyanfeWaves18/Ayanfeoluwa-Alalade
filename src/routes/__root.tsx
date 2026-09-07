@@ -85,6 +85,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Ayanfeoluwa Alalade" },
       {
+        name: "google-site-verification",
+        content: "xgYn4m-y9cmyJz53cOYR1I-N7_B8msvby9Gbedj9kTE",
+      },
+      {
         name: "keywords",
         content:
           "Ayanfeoluwa Alalade, Alalade Ayanfeoluwa, Ayanfe Waves Visuals, Ayanfeoluwa Alalade photographer, Ayanfeoluwa Alalade front end developer, Nigerian photographer, Lagos photographer, React developer Nigeria",
