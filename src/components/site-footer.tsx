@@ -113,6 +113,9 @@ export function SiteFooter() {
             <Link to="/development" className="hover:text-mint">
               The Logic
             </Link>
+            <Link to="/ayanfeoluwa-alalade" className="hover:text-dusk">
+              The Person
+            </Link>
           </div>
         </div>
       </div>

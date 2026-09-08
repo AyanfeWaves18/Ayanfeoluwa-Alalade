@@ -26,6 +26,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/photography", changefreq: "weekly", priority: "0.9" },
           { path: "/development", changefreq: "weekly", priority: "0.9" },
           { path: "/about", changefreq: "monthly", priority: "0.7" },
+          { path: "/ayanfeoluwa-alalade", changefreq: "monthly", priority: "0.9" },
           { path: "/contact", changefreq: "monthly", priority: "0.6" },
         ];
 
